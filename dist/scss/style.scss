@@ -401,6 +401,11 @@ header {
     flex-direction: column;
     justify-content: center;
 
+    #my-form-status {
+        text-align: center;
+        color : $secondary-color;
+        margin-top: -10px;
+    }
     
         input, select{
         padding: 10px;

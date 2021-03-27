@@ -310,6 +310,11 @@ header a:hover {
   flex-direction: column;
   justify-content: center;
 }
+.hero #book-class-form #my-form-status {
+  text-align: center;
+  color: #00B68C;
+  margin-top: -10px;
+}
 .hero #book-class-form input, .hero #book-class-form select {
   padding: 10px;
   width: 340px;
