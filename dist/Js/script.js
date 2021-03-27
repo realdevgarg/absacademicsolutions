@@ -10,6 +10,13 @@ let subjectEl = document.querySelector("select");
 let submitBtn = document.querySelector("#book-btn");
 
 
+function ifAllInputCorrect() {
+  if(phoneNumber.parentElement.classList.contains('success') && stName.parentElement.classList.contains('success')){
+    handleSubmit();
+  }
+}
+
+
 // Event listener to submit form
 formEl.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -33,6 +40,8 @@ function handleInput() {
 
   else {
     setSuccessFor(stName);
+    ifAllInputCorrect();
+
   }
 
   // Checking for email
@@ -43,6 +52,8 @@ function handleInput() {
     setErrorFor(phoneNumber, "Enter a valid 10 digit Mobile Number");
   } else {
     setSuccessFor(phoneNumber);
+    ifAllInputCorrect();
+
   }
 
 setSuccessFor(subjectEl);
@@ -60,10 +71,10 @@ function setErrorFor(input, message) {
 
 // If there is no error, than what we want to do with input ?
 function setSuccessFor(input) {
-  handleSubmit();
   let formControl = input.parentElement;
   formControl.className = "input success";
 }
+
 }
 
 function numberCheck(str) {
@@ -86,6 +97,28 @@ else {
     stName.style.borderRadius = " ";
 }
 })
+
+// FORM SUBMISSION
+var form = document.querySelector("form");
+    
+async function handleSubmit() {
+  var status = document.getElementById("my-form-status");
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+        'Accept': 'application/json'
+    }
+  }).then(response => {
+    status.innerHTML = "Thanks for your submission!";
+    form.reset()
+  }).catch(error => {
+    status.innerHTML = "Oops! There was a problem submitting your form"
+  });
+}
+
+// form.addEventListener("submit", handleSubmit)
 
 
 
@@ -451,26 +484,4 @@ function changeHeaderNav(){
 
 
 
-  // FORM SUBMISSION
-    var form = document.querySelector("form");
-    
-    async function handleSubmit(event) {
-      event.preventDefault();
-      var status = document.getElementById("my-form-status");
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-      }).then(response => {
-        status.innerHTML = "Thanks for your submission!";
-        form.reset()
-      }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
-      });
-    }
-
-    // form.addEventListener("submit", handleSubmit)
-
+  
