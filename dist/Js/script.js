@@ -3,7 +3,7 @@
 // const { Console } = require("node:console");
 
 // Dom elements
-let form = document.querySelector("form");
+let formEl = document.querySelector("form");
 let stName = document.querySelector("#name");
 let phoneNumber = document.querySelector("#phoneNumber");
 let subjectEl = document.querySelector("select");
@@ -11,7 +11,7 @@ let submitBtn = document.querySelector("#book-btn");
 
 
 // Event listener to submit form
-form.addEventListener("submit", (e) => {
+formEl.addEventListener("submit", (e) => {
   e.preventDefault();
   handleInput();
 });
