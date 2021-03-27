@@ -13,6 +13,7 @@ let submitBtn = document.querySelector("#book-btn");
 function ifAllInputCorrect() {
   if(phoneNumber.parentElement.classList.contains('success') && stName.parentElement.classList.contains('success')){
     handleSubmit();
+    formEl.action = "https://formspree.io/f/mwkaeale";
   }
 }
 
