@@ -1,0 +1,28 @@
+@import url("style.css"); /* Using a url */
+
+img {
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+
+h1 {
+    text-align: center;
+    padding-bottom : 20px;
+}
+
+
+.down-content {
+    padding: 20px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.left {
+    padding-top : 30px;
+}
+
+.navigation {
+    margin-top : -10px;
+}
