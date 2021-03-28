@@ -1,0 +1,393 @@
+@media only screen and (max-width: 425px) and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .section-topic {
+    padding-bottom: 10px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .why-cards, .subjects {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .why-card, .subject {
+    width: 300px !important;
+    height: 185px !important;
+    margin: 15px 0px;
+    box-shadow: 0 30px 60px rgba(213, 215, 225, 0.49);
+  }
+}
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 18px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  h2 {
+    font-size: 17px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #dextop-header {
+    display: none;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #header-right-icon {
+    position: absolute;
+    z-index: 900000000000000000;
+    right: 0;
+  }
+  #header-right-icon i {
+    color: white;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .fa-times {
+    color: white !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #mobile-header {
+    display: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 350px !important;
+  }
+  #mobile-header i {
+    float: right;
+  }
+  #mobile-header svg {
+    width: 80px;
+    height: 80px;
+    margin-left: -10px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .hero {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  .hero .hero-svg {
+    max-width: 340px !important;
+    max-height: 400px;
+    margin-left: 0px !important;
+    margin-top: -100px !important;
+    margin-bottom: -70px;
+  }
+  .hero .left {
+    margin-left: 0px;
+  }
+  .hero .left h1, .hero .left p {
+    margin-left: 10px;
+  }
+  .hero #book-class-form {
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 320px !important;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .about-us .about-as-content {
+    text-align: center !important;
+  }
+  .about-us #abs-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .about-us .content p, .about-us .content h3 {
+    padding: 0px 10px !important;
+  }
+  .about-us svg {
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .about-abs {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .about-as {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto !important;
+  }
+  .about-as p, .about-as h3 {
+    text-align: left !important;
+    padding: 0px 20px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #header-right-icon {
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .mobile-navigation-wrap {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .hi {
+    animation: byeBye 500ms ease;
+  }
+  @keyframes byeBye {
+    from {
+      opacity: 0;
+      transform: translateX(-350px);
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  #mobile-as-pic {
+    display: block;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #dextop-as-pic {
+    display: none;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .mobile-navigation {
+    z-index: 500000;
+    display: flex;
+  }
+  .mobile-navigation li {
+    color: white !important;
+    margin: auto;
+  }
+  .mobile-navigation ul {
+    list-style-type: none;
+    margin-left: 100px;
+    margin-top: 50px;
+    text-align: left;
+    line-height: 4;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .announcement-content {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #new {
+    margin-left: 0px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .announcements .left svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .mini-card {
+    width: 320px !important;
+    height: 130px;
+    margin: 20px 0px !important;
+    grid-template-columns: 85% 10% !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .announcements .right {
+    justify-self: center !important;
+  }
+  .announcements svg {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .why-card {
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .galleryContainer {
+    height: 280px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  form {
+    margin-top: -40px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  input, select {
+    padding: 10px;
+    width: 270px !important;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  label {
+    margin-left: 25px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .as-pic {
+    margin: auto;
+    width: 225px !important;
+    height: 225px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .about-as h3 {
+    margin-top: 20px !important;
+  }
+  .about-as p, .about-as h3 {
+    text-align: center !important;
+    padding: 0px 40px;
+  }
+  .about-as i {
+    font-size: 25px !important;
+    text-align: center !important;
+    float: none !important;
+    margin: auto;
+  }
+  .about-as .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .reviews img {
+    max-width: 100%;
+    height: 50px !important;
+    width: 50px !important;
+    margin: 25px 0 0 10px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  blockquote {
+    padding: 25px 50px 30px;
+    height: 400px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .contact-us-content {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr !important;
+  }
+  .contact-us-content .left svg {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .contact-us-content .right {
+    margin-top: -10px !important;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .mini-mini-card {
+    grid-template-columns: auto;
+    margin-bottom: 35px;
+  }
+  .mini-mini-card h5 {
+    margin-left: 30px !important;
+  }
+  .mini-mini-card i {
+    display: none;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #ub-logo {
+    width: 80px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #to-logo {
+    width: 180px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .universities-logos {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 20px 0px;
+  }
+  .universities-logos img {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .college-logo {
+    width: 75px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .f-divider {
+    width: 0px !important;
+    height: 0px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  footer .left {
+    border-right: 0px solid grey !important;
+    border-bottom: 0.5px solid grey !important;
+  }
+  footer .left p {
+    padding-bottom: 20px;
+  }
+  footer .left .quick-links {
+    padding-bottom: 20px;
+  }
+  footer h5 {
+    padding-top: 20px;
+  }
+  footer .right {
+    border-left: 0px solid grey !important;
+    border-top: 0.5px solid grey !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .top {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto auto;
+    padding: 40px 40px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  header span {
+    font-size: 30px;
+  }
+}
+
+/*# sourceMappingURL=mediastyle.css.map */

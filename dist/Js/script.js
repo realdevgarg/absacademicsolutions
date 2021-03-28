@@ -1,14 +1,8 @@
-// FORM Validation
-
-// const { Console } = require("node:console");
-
-// Dom elements
 let formEl = document.querySelector("form");
 let stName = document.querySelector("#name");
 let phoneNumber = document.querySelector("#phoneNumber");
 let subjectEl = document.querySelector("select");
 let submitBtn = document.querySelector("#book-btn");
-
 
 function ifAllInputCorrect() {
   if(phoneNumber.parentElement.classList.contains('success') && stName.parentElement.classList.contains('success')){
@@ -18,15 +12,12 @@ function ifAllInputCorrect() {
 }
 
 
-// Event listener to submit form
 formEl.addEventListener("submit", (e) => {
   e.preventDefault();
   handleInput();
 });
 
-// What to do with inputs ?
 function handleInput() {
-  // Values from dom elements ( input )
   let nameValue = stName.value.trim();
   let phoneNumberValue = phoneNumber.value.trim();
 
@@ -42,16 +33,18 @@ function handleInput() {
   else {
     setSuccessFor(stName);
     ifAllInputCorrect();
-
   }
 
-  // Checking for email
+    //  Checking for phone number
   if (phoneNumberValue === "") {
     setErrorFor(phoneNumber, "Phone number can't be blank");
   }
+
   else if (!numberCheck(phoneNumberValue)) {
     setErrorFor(phoneNumber, "Enter a valid 10 digit Mobile Number");
-  } else {
+  } 
+  
+  else {
     setSuccessFor(phoneNumber);
     ifAllInputCorrect();
 
@@ -59,9 +52,6 @@ function handleInput() {
 
 setSuccessFor(subjectEl);
   
-
-  
-
 // If there is some error, than what we want to do with input ?
 function setErrorFor(input, message) {
   let formControl = input.parentElement;
@@ -75,7 +65,6 @@ function setSuccessFor(input) {
   let formControl = input.parentElement;
   formControl.className = "input success";
 }
-
 }
 
 function numberCheck(str) {
@@ -84,28 +73,12 @@ function numberCheck(str) {
   }
 
 
-// FORM STYLING 
-stName.addEventListener('mouseDown', (e) => {
-    if(e){
-    stName.style.border = "none";
-    stName.style.borderBottom = "1px solid #673DE6";
-    stName.style.borderRadius = "0px";
-}
-
-else {
-    stName.style.border = "1px solid";
-    stName.style.borderBottom = "1px solid #673DE6";
-    stName.style.borderRadius = " ";
-}
-})
-
 // FORM SUBMISSION
-var form = document.querySelector("form");
     
-async function handleSubmit() {
-  var status = document.getElementById("my-form-status");
-  var data = new FormData(event.target);
-  fetch(event.target.action, {
+async function handleSubmit(e) {
+  let status = document.getElementById("my-form-status");
+  let data = new FormData(e.target);
+  fetch(e.target.action, {
     method: form.method,
     body: data,
     headers: {
@@ -119,36 +92,66 @@ async function handleSubmit() {
   });
 }
 
-// form.addEventListener("submit", handleSubmit)
-
-
 
 // Animation 
-gsap.from(".svg-hero", {opacity  : 0, duration : .5, x : -35 , ease : "Power3.easeOut"});
+gsap.from(".hero-svg", {opacity  : 0, duration : .5, x : -35 , ease : "Power3.easeOut"});
 gsap.from(".text-content", {opacity  : 0, duration : 1, y : 35, delay : .5, stagger : 0.5, ease : "expo.easeOut"});
 gsap.from("form", {opacity  : 0, duration : 1, x : 30, delay : 1 , ease : "Power3.easeOut"});
 
 
-// Subjects animation
-// gsap.from('.subject', {scrollTrigger: ".courses-subjects", opacity : 0, duration : .5 ,x : 20, stagger :  0.5})
-
 // REVIEWS SLIDESHOW 
+function initParadoxWay() {
+  "use strict";
+ 
+  if ($(".testimonials-carousel").length > 0) {
+      var j2 = new Swiper(".testimonials-carousel .swiper-container", {
+          preloadImages: false,
+          slidesPerView: 1,
+          spaceBetween: 20,
+          loop: true,
+          grabCursor: true,
+          mousewheel: false,
+          centeredSlides: true,
+          pagination: {
+              el: '.tc-pagination',
+              clickable: true,
+              dynamicBullets: true,
+          },
+          navigation: {
+              nextEl: '.listing-carousel-button-next',
+              prevEl: '.listing-carousel-button-prev',
+          },
+          breakpoints: {
+              1024: {
+                  slidesPerView: 3,
+              },
+              
+          }
+      });
+  }
+  
+// bubbles -----------------
+  
+  setInterval(function () {
+    let size = 0;
+      // var size = randomValue(sArray);
+      // randomValue(bArray) +
+      $('.bubbles').append('<div class="individual-bubble" style="left: ' +  'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
+      $('.individual-bubble').animate({
+          'bottom': '100%',
+          'opacity': '-=0.7'
+      }, 4000, function () {
+          $(this).remove()
+      });
+  }, 350);
+  
+}
+
+//   Init All ------------------
 $(document).ready(function () {
-  $('.testiSlide').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 7000,
-      responsive: [{
-      breakpoint: 850,
-      settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      infinite: true,
-      }
-      }]
-  });
+  initParadoxWay();
 });
+
 
 
 // SCROLL ON CLICK 
@@ -161,23 +164,11 @@ window.scrollTo(0,0);
 $(window).on("scroll", function() {
   if($(window).scrollTop() > 575) {
       $("header").addClass("active");
-      // console.log(window.scrollY);
   } else {
-      //remove the background property so it comes transparent again (defined in your css)
      $("header").removeClass("active");
   }
 });
 
-
-$(window).on("scroll", function() {
-  if($(window).scrollTop() > 575) {
-      $("header").addClass("active");
-      // console.log(window.scrollY);
-  } else {
-      //remove the background property so it comes transparent again (defined in your css)
-     $("header").removeClass("active");
-  }
-});
 
 // Hide Header on on scroll down
 var didScroll;
@@ -221,7 +212,6 @@ function hasScrolled() {
 
 
 // TYPING EFFECT
-// ES6 Class
 class TypeWriter {
   constructor(txtElement, words, wait = 500) {
     this.txtElement = txtElement;
@@ -292,7 +282,6 @@ function init() {
 
 
 // GALLERY SHOW
-
 var slideIndex,slides,dots,captionText;
 function initGallery(){
     slideIndex = 0;
@@ -387,23 +376,12 @@ function playPauseSlides() {
 
 
 // BTT BUTTON TOP 
-var mybutton = document.getElementById("btt");
 
         function topFunction() {
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
         }
 
-
-
-
-// CHECK
-/*!
- * Determine if an element is in the viewport
- * (c) 2017 Chris Ferdinandi, MIT License, https://gomakethings.com
- * @param  {Node}    elem The element
- * @return {Boolean}      Returns true if element is in the viewport
- */
 
 var isInViewport = function (elem) {
 	var distance = elem.getBoundingClientRect();
@@ -422,23 +400,9 @@ window.addEventListener('scroll', function (event) {
 	if (isInViewport(aboutWrap)) {
   animateAboutUs();
   } 
-
-  else {
-    console.log('Nope...');
-  }
 }, false);
 
 
-
-// ANIMATE SUBJECTS US ON VISIBLE 
-function animateSubjects(){
-  let animationTurn = 0;
-  if(animationTurn !== 1){
-    gsap.from(".section-topic", {duration : 2, opacity : 0})
-    // abs-logo-animation
-  // animationTurn = 1;
-  }
-}
 
 // ANIMATE ABOUT US ON VISIBLE 
 let aboutUs = document.querySelector('.about-us');
@@ -450,39 +414,16 @@ function animateAboutUs(){
   let absLogo = document.querySelector('#abs-logo');
   asPic.classList.add("as-pic-animation");
   absLogo.classList.add("abs-logo-animation");
-  
-  // abs-logo-animation
   animationTurn = 1;
   }
 }
 
 
 // MOBILE HEADER 
-let headerRightIcon = document.querySelector("#header-right-icon");
-let mobileHeaderWrap = document.querySelector('.mobile-navigation-wrap');
-headerRightIcon.addEventListener('click', changeHeaderNav);
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
-function changeHeaderNav(){
-  headerRightIcon.classList.toggle('fa-times');
-  document.querySelector('.mobile-navigation-wrap').classList.toggle('on');
-
-
-  if(mobileHeaderWrap.classList.contains("on")){
-    mobileHeaderWrap.style.display = 'block';
-    mobileHeaderWrap.classList.remove('bye');
-    mobileHeaderWrap.classList.add('hi');
-
-    // return;
-  }
-  
-  else {
-    mobileHeaderWrap.style.display = 'none';
-    mobileHeaderWrap.classList.remove('hi');
-    mobileHeaderWrap.classList.add('bye');
-
-  }
-  }
-
-
-
-  
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
