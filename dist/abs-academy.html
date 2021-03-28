@@ -46,7 +46,7 @@
             </div>
             <div class="navigation">
                 <ul>
-                    <a class="nav" href="#subjects">
+                    <a class="nav" href="#subjects_">
                         <li>Subjects</li>
                     </a>
                     <a class="nav" href="#announcements">
@@ -58,7 +58,7 @@
                     <a class="nav" href="#about-us">
                         <li>About</li>
                     </a>
-                    <a class="nav" href="#contact-us">
+                    <a class="nav" href="#contact-us_">
                         <li>Contact</li>
                         <a>
 
@@ -71,21 +71,7 @@
         </header>
 
 
-        <!-- Mobile header version  -->
-            <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="abs-academy.html">Home</a>
-            <a href="#subjects">Subjects/Courses</a>
-            <a href="#announcements">Announcements</a>
-            <a href="#why-choose-us">Why us ?</a>
-            <a href="#about-us">About</a>
-            <a href="#contact-us">Contact</a>
-            <a href="#buy-stationery">Buy Stationery</a>
-            </div>
-          
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-          
-        
+    
            <!-- Hero  -->
          <div class="hero section" id="hero-sec">
             <div class="left">
@@ -718,7 +704,7 @@
             </div>
 
             <div class="right">
-                <form class="book-form" id="book-class-form" 
+                <form action="https://formspree.io/f/mwkaeale" class="book-form" id="book-class-form" 
         method="POST" name=”emailForm” >
         <!-- enctype=”multipart/form-data”  -->
                 <!-- <form action="" class="book-form" id="book-class-form"> -->
@@ -752,7 +738,14 @@
                         <input type="submit" value="Book Now" class="btn" id="book-btn">
                     </div>
 
+                    
+                    <div class="formStatus">
+                    <h3>You free demo class is booked</h3>
+                    <p id="get">You will shortly get all the details<br> through call from our side.</p>
+                    
+                    <img src="img/checked.svg" alt="checked" id="checked">
                     <p id="my-form-status"></p>
+                </div>
 
                 </form>
             </div>
@@ -760,7 +753,7 @@
     </div>
 
     <!-- Courses & Subjects  -->
-    <div class="courses-subjects section" id="subjects">
+    <div class="courses-subjects section" id="subjects_">
         <h1 class="section-topic">Courses <span id="different">&</span> Subjects</h1>
         <div class="subjects cards">
             
@@ -1136,7 +1129,7 @@
         </div>
     </div>
     <!-- Why choose us ? -->
-    <div class="why-choose-us section" id="why-choose-us-sec">
+    <div class="why-choose-us section" id="why-choose-us">
         <h1 class="section-topic">Why choose us <span id="different">?</span></h1>
         <div class="why-cards">
             <div class="why-card">
@@ -1228,7 +1221,7 @@
         </div>
     </div>
     <!-- About us  -->
-    <div class="about-us section" id="about-us-sec">
+    <div class="about-us section" id="about-us">
         <h1 class="section-topic">Who we are <span id="different">?</span></h1>
         <div class="content">
             <div class="about-abs about-single">
@@ -1269,6 +1262,7 @@
     </div>
     <!-- Reviews  -->
     
+    <div>
     <section class="reviews-wrap section">
         <div class="container">
                 <h1 class="section-topic">What our students say <span id="different">?</span></h1>
@@ -1392,12 +1386,12 @@
 
         <button class="btn" id="viewAllBtn"><a href="reviews.html">View All</a></button>
     </section>
-
+</div>
    
     <!-- CONTACT US  -->
-    <div class="contact-us section" id="contact-us-sec">
+    <div class="contact-us section">
         <h1 class="section-topic">Contact us<span id="different" class="unicode">&#9632;</span></h1>
-        <div class="contact-us-content">
+        <div class="contact-us-content"  id="contact-us_">
             <div class="left">
                 <svg width="629" height="468" id="contactUsIllustration" viewBox="0 0 629 468" fill="none"
                     xmlns="http://www.w3.org/2000/svg">

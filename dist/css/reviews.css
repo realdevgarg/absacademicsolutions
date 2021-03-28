@@ -2,19 +2,104 @@
 @import url("subject.css");
 
 
-.students-review {
+:root {
+    --primary-color: #673DE6;
+    --secondary-color: #00B68C;
+  }
+  
+
+section{
+	float: left;
+	position: relative;
+	padding: 80px 0;
+	background: white;
+    text-align: center;
+}
+
+
+.swiper-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    }
+
+/* 
+.swiper-container {
+	width: 100%;
+	height: 100%;
+    text-align: center;
+} */
+
+
+.testimonials-text {
+	/* padding: 75px 50px 75px; */
+	/* overflow:hidden; */
+	background: white;
+	border: 1px solid var(--secondary-color);
+	border-radius: 10px;
+	transition: all .3s ease-in-out;
 }
 
-figure {
-    margin-bottom: 60px;
+.testimonials-text-after{
+	position: absolute;
+	color: var(--primary-color);
+	font-size: 35px;
+	bottom: 25px;
+	right: 30px;
 }
 
-button {
-    margin-top: 40px !important;
+.testimonials-text-before{
+	position: absolute;
+	color: var(--secondary-color);
+	opacity: .3;
+	font-size: 35px;
+	transition: all 400ms linear;
+	top: 25px;
+	left: 30px;
 }
 
-.review img {
-    margin-left: -250px !important;
+
+
+
+.testimonials-avatar h3{
+	font-weight: 600;
+	color: var(--primary-color);
+}
+
+
+.testimonials-avatar h4{
+	 font-weight:400;
+	 font-size:12px;
+	 padding-top:6px;
+	 color: #616978;
+}
+
+.testimonials-carousel .swiper-slide{
+	padding: 30px 0;
+}
+
+.testi-avatar{
+	position: absolute;
+	left: 50%;
+	top: -30px;
+	width: 90px;
+	height: 90px;
+	margin-left: -45px;
+	z-index: 20;
+}
+.testi-avatar img{
+	width: 90px;
+	height: 90px;
+	float: left;
+	border-radius: 100%;
+	border:6px solid #fff;
+	box-shadow: 0 9px 26px rgba(58, 87,135,0.1);
+}
+
+.testimonials-text p{
+	color: #878c9f;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 24px;
+	padding-bottom: 10px;
+	font-weight: 500;
 }

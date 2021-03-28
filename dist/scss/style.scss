@@ -5,41 +5,7 @@
 // @import url('/mediastyle.scss');
 // ANIMATION
 
-.as-pic-animation {
-animation: asAnimation  1.5s ease;
 
-@keyframes asAnimation {
-    from {
-        transform: translateX(50px);
-        opacity: 0;
-    }
-
-    to {
-        
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-}
-
-
-
-.abs-logo-animation {
-    animation: absAnimation  1.5s ease;
-    
-    @keyframes absAnimation {
-        from {
-            transform: translateX(-50px);
-            opacity: 0;
-        }
-    
-        to {
-            
-            transform: translateX(0px);
-            opacity: 1;
-        }
-    }
-    }
 // COLORS
 $primary-color : #673DE6;
 $secondary-color :  #00B68C ; 
@@ -303,6 +269,42 @@ header {
         }
 }
 
+
+// GREENTICK FORM
+.formSubmitted {
+    input, label, h2 , select{
+        display: none;
+    }
+
+    .formStatus {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+    margin: auto;
+    }
+
+    #checked {
+        display: block !important;
+        width: 150px;
+        height : 150px;
+        margin: 60px auto;
+        }
+
+        #get {
+            color : $light-text-color;
+        }
+}
+
+.formStatus {
+    display: none;
+    text-align: center;
+
+    h3 {
+        padding-bottom : 20px;
+    }
+}
 // HOME 
 .hero {
     display: grid;
@@ -423,6 +425,8 @@ header {
                 }
             }
 
+    
+
     #book-class-form {
     margin-left: 120px;
     margin-top: 5px;
@@ -434,6 +438,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    #checked {
+    display: none;
+    }
 
     #my-form-status {
         text-align: center;
@@ -755,6 +763,7 @@ a:hover {
 
 // About us 
 .about-us {
+    
     .content {
         p, h3 {
             line-height: $general-line-height;
@@ -827,7 +836,6 @@ a:hover {
 
 
 // Reviews
-
 section{
 	float: left;
 	position: relative;
@@ -1533,8 +1541,3 @@ text-align: right;
       max-width: 100%;
     }
   }
-
-//  MEDIA 
-#mobile-header {
-    display: none;
-}
