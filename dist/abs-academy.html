@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABS Academic Solutions | Best Coaching for College Students in Gurgaon</title>
-    <meta name="description"
-        content="ABS Academic solutions is all in one offline coaching centre 
-    for college & universities students in gurgaon which includes subjects for B.Tech, B. SC, B.C.A, Polytechnic, Computer languages, Class 11th & 12th">
+    <meta name="description" content="ABS Academic solutions is all in one offline coaching
+     centre for college & universities students in gurgaon which includes subjects for B.Tech, B. SC, B.C.A, Polytechnic, Computer languages, Class 11th & 12th">
     <meta name="author" content="Abhilasha Singh">
+
     <!-- Search Engine -->
     <meta name="image" content="https://omstationery.com/imgs/abs-logo.svg">
+   
     <!-- Schema.org for Google -->
     <meta itemprop="name" content="ABS Academic Solutions | Best Coaching for College Students in Gurgaon">
     <meta itemprop="description"
@@ -40,15 +41,18 @@
     </div>    
 
     <!-- Header wraps -->
-    <div class="body-top" >
+    <div class="body-top">
+        
         <header class="header dextop" id="dextop-header">
-            <div class="logo" id="working">
+
+            <div>
                 <a href="abs-academy.html">
-                    <svg class="abs-logo" id="header-logo">
+                    <svg id="header-logo">
                         <use href="#svg-logo"></use>
                     </svg>
                 </a>
             </div>
+
             <div class="navigation">
                 <ul>
                     <a class="nav" href="#subjects_">
@@ -63,7 +67,7 @@
                     <a class="nav" href="#about-us">
                         <li>About</li>
                     </a>
-                    <a class="nav" href="#contact-us_">
+                    <a class="nav" href="#contact-us">
                         <li>Contact</li>
                         <a>
 
@@ -75,13 +79,37 @@
             </div>
         </header>
 
+        <!-- MOBILE HEADER -->
+        <header id="mobile-header">
+            <div class="header-left">
+                <a href="abs-academy.html">
+                    <svg>
+                        <use href="#svg-logo"></use>
+                    </svg>
+                </a>
+            </div>
 
-    
+        <div id="mySideNav" class="sideNav">
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a class="nav" id="top-nav-item">Home</a>
+            <a class="nav" href="#subjects_">Subjects</a>
+            <a class="nav" href="#announcements">Announcements</a>
+            <a class="nav" href="#why-choose-us">Why us?</a>
+            <a class="nav" href="#about-us">About us</a>
+            <a class="nav" href="#reviews">Reviews</a>
+            <a class="nav" href="#contact-us">Contact</a>
+            <a class="nav" href="https://omstationery.com">Buy Stationery<a>
+          </div>
+          <span onclick="openNav()" id="hamburger">&#9776;</span> 
+        </header>
+           
+
            <!-- Hero  -->
          <div class="hero section" id="hero-sec">
+
             <div class="left">
                 <svg class="hero-svg" width="635" height="446" viewBox="0 0 635 446" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" id="mobile-hero-svg">
+                    xmlns="http://www.w3.org/2000/svg" id="hero-svg">
                     <g id="HERO" clip-path="url(#clip0)">
                         <g id="Group 29">
                             <g id="Group 12">
@@ -702,7 +730,7 @@
                 </svg>
 
                 <div class="text-content">
-                    <h1 class="text-content-stagger">We help you understand <span class="txt-type" id="different"
+                    <h1 class="text-content-stagger">We just help you understand <span class="txt-type break" id="different"
                             data-wait="3000" data-words='["Better", "Easy", "Anything", "At anytime"]'></span></h1>
                     <p id="para" class="text-content-stagger">for your school, colleges, & universities...</p>
                 </div>
@@ -711,25 +739,23 @@
             <div class="right">
                 <form action="https://formspree.io/f/mwkaeale" class="book-form" id="book-class-form" 
         method="POST" name=”emailForm” >
-        <!-- enctype=”multipart/form-data”  -->
-                <!-- <form action="" class="book-form" id="book-class-form"> -->
                     <div>
                         <h2>Book Your Free Demo Class</h2>
                     </div>
 
                     <div class="input">
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name"> <small></small>
+                        <input type="text" name="name" id="nameInput"> <small></small>
                     </div>
 
                     <div class="input">
                         <label for="phoneNumber">Phone Number</label>
-                        <input name="phoneNumber" id="phoneNumber" type="tel"> <small></small>
+                        <input name="phoneNumber" id="phoneNumberInput" type="tel"> <small></small>
                     </div>
 
                     <div class="input">
                         <label for="subject">Subject/Course</label>
-                        <select id="subjects-select" name="subject" id="subject">
+                        <select id="subjects-select" name="subject" id="subjectInput">
                             <option value="B.tech">B.Tech</option>
                             <option value="B.C.A">B.C.A</option>
                             <option value="B. SC">B. SC</option>
@@ -745,8 +771,8 @@
 
                     
                     <div class="formStatus">
-                    <h3>You free demo class is booked</h3>
-                    <p id="get">You will shortly get all the details<br> through call from our side.</p>
+                    <h3>Congratulations! You free demo class is booked.</h3>
+                    <p id="get">You will shortly get all the details through a call <br> from our side.</p>
                     
                     <img src="img/checked.svg" alt="checked" id="checked">
                     <p id="my-form-status"></p>
@@ -1268,7 +1294,7 @@
     <!-- Reviews  -->
     
     <div>
-    <section class="reviews-wrap section">
+    <section class="reviews-wrap section" id="reviews">
         <div class="container">
                 <h1 class="section-topic">What our students say <span id="different">?</span></h1>
         </div>
@@ -1396,7 +1422,7 @@
     <!-- CONTACT US  -->
     <div class="contact-us section">
         <h1 class="section-topic">Contact us<span id="different" class="unicode">&#9632;</span></h1>
-        <div class="contact-us-content"  id="contact-us_">
+        <div class="contact-us-content"  id="contact-us">
             <div class="left">
                 <svg width="629" height="468" id="contactUsIllustration" viewBox="0 0 629 468" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -1766,7 +1792,7 @@
                     </div>
                     <div class="quick-link"> <a href="#about-us">About us</a>
                         <br> <a href="reviews.html">Reviews</a>
-                        <br> <a href="#contact-us_">Contact</a>
+                        <br> <a href="#contact-us">Contact</a>
                         <br> <a href="https://omstationery.com/">Buy stationery</a>
                     </div>
                 </div>
@@ -1907,7 +1933,9 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script src='http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="Js/script.js"></script>
+    <script src="Js/main.js"></script>
+    
 </body>
 
 </html>

@@ -163,16 +163,19 @@ button a {
     position : fixed;
     right : 20px;
     bottom: 50px;
-    z-index : 100000000000000000;
+    z-index : 2;
 }
 
 #cta i {
-    margin : auto;
-    font-size : 22px;
+    font-size : 26px;
 }
 
 #call {
     display : none;
+}
+
+#chat {
+    display: block;
 }
 
 .cta-btn {
@@ -182,57 +185,16 @@ button a {
     color: white;
     padding: 15px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    // margin: 4px 2px;
     cursor: pointer;
     border-radius: 50%;
+    transition : all 0.4s;
   }
   
-  
-
-
 .cta-btn:hover {
 background-color: darken($color: $primary-color, $amount: 20);
 }
 
 // -------- HEADER --------------
-.sidenav {
-    height: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    left : 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 0px;
-    font-size: 36px;
-    margin-left: 250px;
-    z-index : 10000000000 !important;
-  }
-  
   .active {
     box-shadow: rgb(27 39 12 / 10%) 0 1px 3px;
     background-color: white !important;
@@ -240,12 +202,16 @@ background-color: darken($color: $primary-color, $amount: 20);
     top : 0;
     left : 0;
     width : 100%;
-    transition: all 0.5s;
-    animation: headerSlow 500ms ease;
     margin-top: -15px;
 
     svg {
     padding: 10px 0px;
+    height: 70px !important;
+    margin-top: 15px;
+    }
+
+    .navigation {
+    // margin-top: 10px;
     }
 }
 
@@ -254,14 +220,8 @@ background-color: darken($color: $primary-color, $amount: 20);
 }
 
 
-@keyframes headerSlow {
-    from {
-    opacity: 0;
-    }
-
-    to {
-    opacity: 1;
-    }
+#mobile-header {
+    display: none;
 }
 
 header { 
@@ -308,6 +268,7 @@ header {
 }
 
 
+
 // GREENTICK FORM
 .formSubmitted {
     input, label, h2 , select{
@@ -348,11 +309,11 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 40px;
-    margin-top: 23px;
+    margin-top: 28px;
 
      svg {
          margin-top: -33px;
-         margin-bottom: 20px;
+         margin-bottom: 23px;
      }
 
      h1 {   
@@ -496,7 +457,7 @@ header {
     #my-form-status {
         text-align: center;
         color : $secondary-color;
-        margin-top: -10px;
+        margin-top: -20px;
     }
     
         input, select{
@@ -575,7 +536,7 @@ header {
     justify-items: center;
     }
 
-    .mobile {
+    .mobile-header-wrap {
         display: none;
     }
 
@@ -598,8 +559,8 @@ header {
     }
 
 
-.mobile-navigation-wrap {
-    display: none;
+.mobile-header-wrap {
+    display: none !important;
 }
 
 
@@ -1417,27 +1378,27 @@ padding-bottom : 40px;
 }
 
 
-.galleryContainer .moveLeftCurrentSlide{
-    animation-name: moveLeftCurrent;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
+// .galleryContainer .moveLeftCurrentSlide{
+//     animation-name: moveLeftCurrent;
+//     animation-duration: 0.5s;
+//     animation-timing-function: linear;
+//     animation-fill-mode:forwards;
+// }
+// .galleryContainer .moveLeftNextSlide{
+//     animation-name: moveLeftNext;
+//     animation-duration: 0.5s;
+//     animation-timing-function: linear;
+//     animation-fill-mode:forwards;
+// }
 
-}
-.galleryContainer .moveLeftNextSlide{
-    animation-name: moveLeftNext;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-}
-@keyframes moveLeftCurrent {
-    from {margin-left: 0;opacity: 1;}
-    to {margin-left: -100%;opacity: 1;}
-}
-@keyframes moveLeftNext {
-    from {margin-left: 100%;opacity: 1;}
-    to {margin-left: 0%;opacity: 1;}
-}
+// @keyframes moveLeftCurrent {
+//     from {margin-left: 0;opacity: 1;}
+//     to {margin-left: -100%;opacity: 1;}
+// }
+// @keyframes moveLeftNext {
+//     from {margin-left: 100%;opacity: 1;}
+//     to {margin-left: 0%;opacity: 1;}
+// }
 
 
 .galleryContainer .moveRightCurrentSlide{
