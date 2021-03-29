@@ -1,5 +1,5 @@
 @import url("style.css"); /* Using a url */
-@import url("mediastyle.css"); /* Using a url */
+@import url("media.css"); /* Using a url */
 
 
 
@@ -9,6 +9,11 @@ header {
 
 .body-top {
     background: none;
+}
+
+#ql1 {
+grid-row: 1/2 !important;
+grid-column : 1/2  !important;
 }
 
 .navigation {
@@ -29,6 +34,8 @@ h1 {
     padding: 0px 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 100px;
+
 }
 
 .left {
@@ -49,7 +56,6 @@ h1 {
 
 
     header svg {
-        margin-left: -50px !important;
         margin-top: 20px;
     }
 

@@ -1,6 +1,6 @@
 @import url("style.css");
 @import url("subject.css");
-
+@import url("media.css");
 
 :root {
     --primary-color: #673DE6;
@@ -10,7 +10,6 @@
 
 section{
 	position: relative;
-	padding: 90px 0;
 	background: white;
     text-align: center;
 }
@@ -27,29 +26,26 @@ section{
         grid-column: 2/3 !important;
     }
 
+	.reviews-wrap {
+		margin-top: -35px;
+		background-color: white !important;
+	}
 
     .testi-item {
         height: 350px !important;
         margin-bottom: 30px;
-        border: 1px solid var(--secondary-color);
-        border-radius: 10px;
+        border: 1px solid var(--secondary-color) !important;
+        border-radius: 10px
     }
 
-/* 
-.swiper-container {
-	width: 100%;
-	height: 100%;
-    text-align: center;
-} */
-
-
 .testimonials-text {
-	/* padding: 75px 50px 75px; */
-	/* overflow:hidden; */
-	background: white;
 	border-radius: 10px;
 	transition: all .3s ease-in-out;
-    /* border-top : 1px solid var(--secondary-color); */
+	background-color: white;
+	color : #673DE6;
+	height: 325px;
+	border : 1px solid #00B68C;
+
 }
 
 .testimonials-text-after{
@@ -83,7 +79,7 @@ section{
 	 font-weight:400;
 	 font-size:12px;
 	 padding-top:6px;
-	 color: #616978;
+	 color: black;
 }
 
 .testimonials-carousel .swiper-slide{
@@ -111,12 +107,12 @@ section{
 }
 
 .testimonials-text p{
-	color: #878c9f;
-	font-size: 14px;
-	font-style: italic;
+	color: #26282d;
+	font-size: 16px;
+	font-style: normal !important;
 	line-height: 24px;
 	padding-bottom: 10px;
-	font-weight: 500;
+	font-weight: normal !important;
 }
 
 
@@ -125,7 +121,7 @@ section{
     padding: 15px;
     text-align: center;
     outline: none;
-    background-color: var(--primary-color);
+    background-color: #673DE6;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -135,5 +131,35 @@ section{
     display: flex;
     justify-self: center;
     margin-top: 40px;
+	opacity: 0.8;
+	transition: all 200ms ease;
 }
 
+#writeReview:hover {
+	opacity: 1;
+}
+
+
+
+
+
+
+@media only screen and (max-width : 450px){
+
+	.swiper-wrapper {
+		display: flex !important;
+		flex-direction: column;
+		}
+
+		.banner {
+			margin-top: 65px;
+		}
+
+	.testimonials-text {
+		height: 390px;
+	}
+
+	.testi-item {
+		margin-bottom: 75px;
+	}
+}

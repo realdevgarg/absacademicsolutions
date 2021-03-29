@@ -9,11 +9,11 @@
 
 @media only screen and (max-width : 450px){
 
-
 /* GLOBAL */
 h1 {
     font-size : 22px !important;
 }
+
 
 #unicode {
 font-size: 16px !important;
@@ -160,34 +160,49 @@ margin-top: 0px;
 
 /* HERO */
 .hero {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    justify-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    margin : 0px auto !important;
+
 }
 
-.hero .left h1 {
-    font-size: 26px !important;
+
+.hero .left {
+ display: grid; 
+ place-items: center;
+ margin-top: 10px;
+}
+
+
+.hero .right {
+    display: grid; 
+    place-items: center;
+}
+
+.hero .right {
+    margin-left: 0px !important;
+}
+
+.hero  h1 {
+    font-size: 24px !important;
     margin-bottom : 5px;
-    margin-top: -10px !important;
+    margin-top: 0px !important;
+
 }
 
 .hero-svg {
-    max-width: 330px;
-    max-height: 300px;
+    width: 330px;
+    height: 300px;
     margin-top: 20px !important;
     margin-bottom: -10px !important;
-    margin-left : -10px !important;
 }
 
 #book-class-form {
-    margin-left: 0px !important;
     margin-top: 40px !important;
     width: 320px !important;
     height: 400px !important;
-    justify-items: center;
-    justify-content: center;
-    justify-self: center;
+    margin-left: 0px !important;
 }
 
         input, select{

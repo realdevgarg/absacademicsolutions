@@ -10,12 +10,14 @@
 </head>
 
 <body>
+  <!-- Header wraps -->
+  <div class="body-top">
+        
+    <header class="header dextop" id="dextop-header">
 
-    <!-- Header  -->
-    <header class="header">
-        <div class="logo">
-            <a  href="abs-academy.html">
-                <svg class="abs-logo" id="header-logo">
+        <div>
+            <a href="abs-academy.html">
+                <svg id="header-logo">
                     <use href="#svg-logo"></use>
                 </svg>
             </a>
@@ -23,28 +25,55 @@
 
         <div class="navigation">
             <ul>
-                <a class="nav" href="abs-academy.html#subjects_">
+                <a class="nav" href="#subjects_">
                     <li>Subjects</li>
                 </a>
-
-                <a class="nav" href="abs-academy.html#announcemens">
+                <a class="nav" href="#announcements">
                     <li>Announcements</li>
                 </a>
-                <a class="nav" href="abs-academy.html#why-choose-us">
+                <a class="nav" href="#why-choose-us">
                     <li>Why us?</li>
                 </a>
-                <a class="nav" href="abs-academy.html#about-us">
+                <a class="nav" href="#about-us">
                     <li>About</li>
                 </a>
-                <a class="nav" href="abs-academy.html#contact-us_">
-                    <li>Contact</li><a>
-                        <a class="nav" href="https://omstationery.com">
-                            <li id="buy-stationery">Buy Stationery</li>
-                        </a>
+                <a class="nav" href="#contact-us">
+                    <li>Contact</li>
+                    <a>
+
+                <a class="nav" href="https://omstationery.com">
+                     <li id="buy-stationery">Buy Stationery</li>
+                 </a>
+
             </ul>
         </div>
     </header>
 
+    <!-- MOBILE HEADER -->
+    <header id="mobile-header">
+        <div class="header-left">
+            <a href="abs-academy.html">
+                <svg>
+                    <use href="#svg-logo"></use>
+                </svg>
+            </a>
+        </div>
+
+    <div id="mySideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+        <a class="nav" href="./abs-academy.html">Home</a>
+        <a class="nav" href="#subjects_">Subjects</a>
+        <a class="nav" href="#announcements">Announcements</a>
+        <a class="nav" href="#why-choose-us">Why us?</a>
+        <a class="nav" href="#about-us">About us</a>
+        <a class="nav" href="#reviews">Reviews</a>
+        <a class="nav" href="#contact-us">Contact</a>
+        <a class="nav" href="https://omstationery.com">Buy Stationery<a>
+      </div>
+      <span onclick="openNav()" id="hamburger">&#9776;</span> 
+    </header>
+
+    
     <div class="banner">
         <img src="img/review.png" alt="">
     </div>
@@ -313,7 +342,10 @@
     <script src="https://kit.fontawesome.com/e956871567.js" crossorigin="anonymous"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script src='http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
-    <script src="scripts.js"></script>
+    <script src="Js/script.js"></script>
+    <script src="Js/main.js"></script>
+    
+
 </body>
 
 </html>
