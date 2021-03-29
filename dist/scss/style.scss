@@ -26,7 +26,7 @@ $para-font : 'Arial', sans-serif;
 
 // Font Sizes
 $heading-font-size-1 : 35px;
-$heading-font-size-2 : 25px;
+$heading-font-size-2 : 24px;
 $para-font-size : 16px;
 $general-line-height : 1.75;
 
@@ -532,13 +532,9 @@ header {
 %card-wrap-share {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     justify-items: center;
     }
 
-    .mobile-header-wrap {
-        display: none;
-    }
 
     %card-share {
         display: flex;
@@ -553,17 +549,6 @@ header {
         box-shadow: 0 30px 60px rgb(213 215 225 / 49%);
     }
 
-    %card-share-hover {
-        transition: transform 0.5s;
-        transform : scale(1.05)
-    }
-
-
-.mobile-header-wrap {
-    display: none !important;
-}
-
-
 // SUBJECTS 
 .courses-subjects {
 background-color:$light-back-color;
@@ -576,9 +561,8 @@ background-color:$light-back-color;
  @extend %card-share;
 }
 
-
 h1 {
-color : $sec-heading-color !important;    
+color : $sec-heading-color!important;    
 }
 
 h2 {
@@ -588,10 +572,9 @@ h2 {
     font-size: $heading-font-size-2;
     }
   
-
 .para {
-    color: $sec-heading-color;
-    margin: 20px auto;
+    color: $para-color;
+    margin: 18px auto;
     line-height: 22px;
 }
 
@@ -602,13 +585,17 @@ a {
 a:hover {
     color: $secondary-color;
 }
+
+#btech {
+    grid-column: 1 / 2  !important;
+}
 }
 
 // Announcement
-.announcements .left svg {
+.announcements .left img {
     fill : $primary-color !important;
-    width: 50px;
-    height: 50px;
+    width: 50px !important;
+    height: 50px !important;
 }
 
 .announcements {
@@ -634,14 +621,9 @@ a:hover {
         svg {
             fill : $primary-color !important;
         }
-        .icon-wrap {
-            display: flex;
-            justify-self: right;
-            margin-right: 20px;
-        }
 
-        #topperIcon img {
-        width: 80px;
+        .content {
+            margin-right : 10px;
         }
 
         #new {
@@ -655,6 +637,9 @@ a:hover {
         }
         }
 
+        #a-subject{
+            font-size : 22px;
+        }
 
         p {
             margin-top: 5px;
@@ -667,10 +652,9 @@ a:hover {
 
 
     .right {
-        margin-top: 30px;
+        margin-top: 33px;
 
-     
-
+    
      #women-head {
      animation: womenHead 2s infinite alternate ease-in-out;
      transform-origin: bottom;
@@ -737,7 +721,6 @@ a:hover {
    h1 {
     color : $sec-heading-color !important;    
     }
-
     
   .why-cards {
     @extend %card-wrap-share;
@@ -760,13 +743,15 @@ a:hover {
     h2 {
         margin-top : 5px;
     }
+    
     .para {
         color: $para-color;
         margin: 10px auto;
         line-height: $general-line-height;
-
     }
 }
+
+// About us 
 
 #dextop-as-pic {
     display: block;
@@ -776,7 +761,7 @@ a:hover {
     display: none;
 }
 
-// About us 
+
 .about-us {
     
     .content {

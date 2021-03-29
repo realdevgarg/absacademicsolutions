@@ -355,7 +355,7 @@ header a:hover {
 .hero #book-class-form #my-form-status {
   text-align: center;
   color: #00B68C;
-  margin-top: -10px;
+  margin-top: -20px;
 }
 .hero #book-class-form input, .hero #book-class-form select {
   padding: 10px;
@@ -408,12 +408,7 @@ header a:hover {
 .why-choose-us .why-cards, .courses-subjects .subjects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   justify-items: center;
-}
-
-.mobile-header-wrap {
-  display: none;
 }
 
 .why-choose-us .why-card, .announcements .mini-card, .courses-subjects .subject {
@@ -429,10 +424,6 @@ header a:hover {
   box-shadow: 0 30px 60px rgba(213, 215, 225, 0.49);
 }
 
-.mobile-header-wrap {
-  display: none !important;
-}
-
 .courses-subjects {
   background-color: #c9edff;
 }
@@ -443,11 +434,11 @@ header a:hover {
   color: #673DE6;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 24px;
 }
 .courses-subjects .para {
-  color: #171A22;
-  margin: 20px auto;
+  color: #26282d;
+  margin: 18px auto;
   line-height: 22px;
 }
 .courses-subjects a {
@@ -456,11 +447,14 @@ header a:hover {
 .courses-subjects a:hover {
   color: #00B68C;
 }
+.courses-subjects #btech {
+  grid-column: 1/2 !important;
+}
 
-.announcements .left svg {
+.announcements .left img {
   fill: #673DE6 !important;
-  width: 50px;
-  height: 50px;
+  width: 50px !important;
+  height: 50px !important;
 }
 
 .announcements .announcement-content {
@@ -479,13 +473,8 @@ header a:hover {
 .announcements .left svg {
   fill: #673DE6 !important;
 }
-.announcements .left .icon-wrap {
-  display: flex;
-  justify-self: right;
-  margin-right: 20px;
-}
-.announcements .left #topperIcon img {
-  width: 80px;
+.announcements .left .content {
+  margin-right: 10px;
 }
 .announcements .left #new {
   margin-left: 120px;
@@ -495,6 +484,9 @@ header a:hover {
 .announcements .left #new h2 {
   margin-bottom: 3px !important;
 }
+.announcements .left #a-subject {
+  font-size: 22px;
+}
 .announcements .left p {
   margin-top: 5px;
 }
@@ -502,7 +494,7 @@ header a:hover {
   margin-left: -40px !important;
 }
 .announcements .right {
-  margin-top: 30px;
+  margin-top: 33px;
 }
 .announcements .right #women-head {
   animation: womenHead 2s infinite alternate ease-in-out;

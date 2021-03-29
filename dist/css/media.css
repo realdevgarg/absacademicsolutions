@@ -1,12 +1,20 @@
 @import url('style.css');
 
+/* heading-font-size-2 : 26px; */
+
+:root {
+--heading-font-size-2 : 22px;
+}
+
 
 @media only screen and (max-width : 450px){
+
 
 /* GLOBAL */
 h1 {
     font-size : 22px !important;
 }
+
 
 /* CTA */
 #chat {
@@ -70,7 +78,6 @@ p{
 /* CTA */
 
 /* HEADER */
-
 #dextop-header {
     display: none;
 }
@@ -165,14 +172,14 @@ margin-top: 0px;
     max-height: 300px;
     margin-top: 20px !important;
     margin-bottom: -10px !important;
-    margin-left : -5px !important;
+    margin-left : -10px !important;
 }
 
 #book-class-form {
     margin-left: 0px !important;
     margin-top: 40px !important;
     width: 320px !important;
-    height: 390px !important;
+    height: 400px !important;
 }
 
         input, select{
@@ -203,34 +210,53 @@ grid-template-columns: 1fr !important;
 
 .card {
     width: 315px !important;
-    height: 175px !important;
+    height: 170px !important;
     margin: 10px 0px !important;
 }
 
 
-/* ANNOUNCEMENTS */
+.cards h2 {
+        font-size : var(--heading-font-size-2) !important;
+    }
 
+.subjects .para {
+    margin: 10px auto !important;
+    line-height: 22px;
+}
+
+
+
+/* ANNOUNCEMENTS */
 .announcement-content {
     display: grid;
     grid-template-columns: 1fr !important;
     grid-template-rows: auto auto !important;
+    justify-items: center;
+
 }
 
 #new {
     margin-left: 0px !important;
 }
+#a-subject {
+    font-size : 14px !important;
+}
 
+.left .content {
+    margin-right : 0px !important;
+}
+
+
+.announcements .left img {
+    width: 35px !important;
+    height: 35px !important;
+}
 
 .mini-card {
-    width: 300px !important;
+    width: 320px !important;
     margin: 20px 0px !important;
     display: grid;
     grid-template-columns: 80% 20%; 
-    }
-
-    .announcements .left svg {
-        width: 30px;
-        height: 30px;
     }
 
     #announcements {
@@ -242,16 +268,28 @@ grid-template-columns: 1fr !important;
 
     .announcement-content .right {
         margin-top: -70px;
-        margin-bottom: -20px;
-    
+        margin-bottom: -75px;
     }
+
     .announcements .right svg {
-        
-        width : 300px !important;
+        width : 330px !important;
         margin: 0 auto  !important;
     }
 
 /* WHY CHOOSE US */
+.why-card .content h3{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align : center !important;    
+}
+
+.why-card p {
+    line-height: 20px !important;
+}
+
+
+
 /* ABOUT US */
 
 .about-abs, .about-as{
