@@ -772,7 +772,7 @@
                     
                     <div class="formStatus">
                     <h3>Congratulations! You free demo class is booked.</h3>
-                    <p id="get">You will shortly get all the details through a call <br> from our side.</p>
+                    <p id="get">You will shortly get all the details through a call from our side.</p>
                     
                     <img src="img/checked.svg" alt="checked" id="checked">
                     <p id="my-form-status"></p>
@@ -1307,21 +1307,25 @@
     </div>
 
     <!-- Reviews  -->
-    
     <div>
-    <section class="reviews-wrap section" id="reviews">
-        <div class="container">
-                <h1 class="section-topic">What our students say <span id="different">?</span></h1>
-        </div>
+    <div class="reviews-wrap section" id="reviews">
+    <h1 class="section-topic" id="review-heading">What our students say <span id="different">?</span></h1>
 
         <div class="testimonials-carousel-wrap">
-            <div class="listing-carousel-button listing-carousel-button-next"><i class="fa fa-caret-right" style="color: #fff"></i></div>
-            <div class="listing-carousel-button listing-carousel-button-prev"><i class="fa fa-caret-left" style="color: #fff"></i></div>
+
+            <div class="listing-carousel-button listing-carousel-button-next">
+                <i class="fa fa-caret-right" id="caretLeft"></i>
+            </div>
+            
+            <div class="listing-carousel-button listing-carousel-button-prev">
+                <i class="fa fa-caret-left" id="caret"></i>
+            </div>
            
             <div class="testimonials-carousel">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
+
                             <div class="testi-item">
                                 <div class="testi-avatar"><img src="img/simran-makkar.jpg"></div>
                                 <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
@@ -1354,8 +1358,8 @@
                                 <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
                             </div>
                         </div>
+
                         <!--third-->
-    
                         <div class="swiper-slide">
                             <div class="testi-item">
                                 <div class="testi-avatar"><img src="img/charu-shriwal.jpg"></div>
@@ -1421,18 +1425,21 @@
                                 <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
                             </div>
                         </div>
+                    </div>
                         <!--testi end-->
     
                     </div>
                 </div>
+            
+                
+                
+            <div class="tc-pagination"></div>
+            <button class="btn" id="viewAllBtn"><a href="reviews.html">View All</a></button>
+        
             </div>
-    
+            
         </div>
-        <div class="tc-pagination"></div>
-
-        <button class="btn" id="viewAllBtn"><a href="reviews.html">View All</a></button>
-    </section>
-</div>
+        </div>
    
     <!-- CONTACT US  -->
     <div class="contact-us section">

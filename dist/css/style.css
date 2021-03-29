@@ -631,7 +631,7 @@ header a:hover {
   margin-top: 10px;
 }
 
-section {
+.reviews-wrap {
   float: left;
   position: relative;
   padding: 30px 0;
@@ -639,6 +639,18 @@ section {
   z-index: 1;
   width: 100%;
   text-align: center;
+}
+
+.fa-caret-left {
+  color: white;
+}
+
+.fa-caret-right {
+  color: white;
+}
+
+#caretLeft {
+  color: white;
 }
 
 .reviews-wrap h1 {

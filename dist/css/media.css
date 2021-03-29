@@ -338,6 +338,7 @@ text-align : center !important;
 
 #about-divider {
     display: block !important;
+    margin: 30px auto;
 }
 
 
@@ -368,6 +369,9 @@ text-align : center !important;
         .about-as h3{
             margin-top: 15px !important;
         }
+        .about-as p {
+            margin-top: 0px !important;
+        }
 
         .about-as i {
                 font-size : 25px !important;
@@ -379,6 +383,11 @@ text-align : center !important;
 
 
 /* REVIEWS */
+#review-heading {
+margin-bottom: 20px !important;
+}
+
+
 /* CONTACT */
 .contact-us-content {
     display: grid;

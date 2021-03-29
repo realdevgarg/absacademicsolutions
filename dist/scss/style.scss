@@ -843,7 +843,7 @@ a:hover {
 
 
 // Reviews
-section{
+.reviews-wrap{
 	float: left;
 	position: relative;
 	padding: 30px 0;
@@ -852,6 +852,21 @@ section{
 	width: 100%;
     text-align: center;
 }
+
+.fa-caret-left {
+    color : white;
+}
+
+.fa-caret-right{
+    color : white;
+}
+
+#caretLeft {
+    color: white;
+}
+
+
+
 
 .reviews-wrap h1 {
 padding-bottom : 40px;
