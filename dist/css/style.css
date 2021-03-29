@@ -572,15 +572,19 @@ header a:hover {
   display: none;
 }
 
+#about-divider {
+  display: none;
+}
+
 .about-us .content p, .about-us .content h3 {
   line-height: 1.75;
   padding: 0px 40px;
 }
 .about-us .content p {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .about-us .content .about-single {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .about-us .content .about-abs {
   display: grid;
@@ -589,14 +593,17 @@ header a:hover {
 .about-us .content .about-abs p, .about-us .content .about-abs h3 {
   text-align: left !important;
 }
-.about-us .content .about-abs .logo {
+.about-us .content .about-abs .logo svg {
   width: 300px;
   height: 300px;
 }
+.about-us .as-pic img {
+  border-radius: 20px;
+  width: 230px;
+  height: 280px;
+}
 .about-us .as-pic {
-  border-radius: 5%;
-  width: 260px;
-  height: 300px;
+  margin-left: 25px !important;
 }
 .about-us .about-as {
   display: grid;
@@ -606,13 +613,14 @@ header a:hover {
   margin-top: 35px;
 }
 .about-us .about-as p, .about-us .about-as h3 {
-  text-align: right;
+  text-align: left;
   padding: 0px 40px;
 }
 .about-us .about-as i {
-  float: right;
+  float: left;
   font-size: 35px;
   margin: 10px 10px;
+  margin-left: 30px;
   transition: all 0.1s ease;
 }
 .about-us .about-as i:hover {

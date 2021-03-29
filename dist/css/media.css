@@ -291,19 +291,17 @@ text-align : center !important;
 
 
 /* ABOUT US */
-
 .about-abs, .about-as{
     grid-template-columns: 1fr !important; 
     grid-template-rows: auto auto;
 }
 
-.about-abs p {
-    margin-top: -20px !important;
-    text-align: center !important;
-}
+.about-us   p, h3 {
+    padding : 0px 0px !important;
+     }
 
-
-.about-us svg {
+/* ABS  */
+.about-abs  svg {
     display: block;
     margin : auto;
     width: 200px !important;
@@ -311,20 +309,45 @@ text-align : center !important;
     margin-top: -30px !important;
     }
 
+    .about-us .content .about-abs p{
+        text-align: center !important;
+        margin-top : -25px !important;
+    }
+    
+
+
+/* ABHILASHA SINGH */
 #mobile-as-pic {
-    display: flex;
-    justify-content: center;
-    margin-top : 20px
+    display: block;
+    margin-top : 30px;
 }
 
-#mobile-as-pic img {
-    width: 220px !important;
-    height: 250px !important;  
-}
-    .about-us   p, h3 {
-    padding : 0px 0px !important;
+
+.about-us .as-pic {
+    margin-left : 0px !important;
+  }
+
+
+.about-as  h3 {
     text-align: center !important;
-     }
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#about-divider {
+    display: block !important;
+}
+
+
+#mobile-as-pic img {
+    width: 200px !important;
+    margin: auto !important;
+    height: 250px !important;  
+    display: flex;
+}
+
 
      #abs-name {
          display: none;
@@ -333,21 +356,26 @@ text-align : center !important;
      .about-as  p , h3 {
         text-align: center !important;
         padding : 0px 0px !important;
-        display: flex;
-        justify-self: center;
         }
 
+        .social-icons {
+            display: flex;
+            margin: auto !important;
+            justify-content: center;
+            margin-top: -10px !important;
+        }
 
         .about-as h3{
-            margin-top: -20px !important;
+            margin-top: 15px !important;
         }
 
         .about-as i {
                 font-size : 25px !important;
-                font-size: center !important;
-                margin: 10px 10px;
+                margin: 5px 5px !important;
+                text-align: center !important;
             }
-        
+
+            
 
 
 /* REVIEWS */

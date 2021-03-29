@@ -752,7 +752,6 @@ a:hover {
 }
 
 // About us 
-
 #dextop-as-pic {
     display: block;
 }
@@ -762,8 +761,12 @@ a:hover {
 }
 
 
-.about-us {
-    
+
+#about-divider {
+    display: none;
+}
+
+.about-us {    
     .content {
         p, h3 {
             line-height: $general-line-height;
@@ -771,11 +774,11 @@ a:hover {
         }
 
         p {
-            margin-top: 10px;
+            margin-top: 15px;
         }
         
         .about-single {
-            padding-bottom: 30px;
+            padding-bottom: 20px;
         }
 
         .about-abs{
@@ -787,7 +790,7 @@ a:hover {
                 text-align: left !important;
                     }
                 
-        .logo {
+        .logo svg {
             width: 300px;
             height: 300px;
             }
@@ -795,11 +798,15 @@ a:hover {
     }
 
 
-    .as-pic {
-        border-radius: 5%;
-        width: 260px;
-        height: 300px;
-        }
+    .as-pic img{
+        border-radius: 20px;
+        width: 230px;
+        height: 280px;
+      }
+
+      .as-pic {
+        margin-left : 25px !important;
+      }
 
         
     .about-as {
@@ -811,14 +818,15 @@ a:hover {
         }
           
         p , h3 {
-            text-align: right;
+            text-align: left;
             padding : 0px 40px;
                 }
 
         i {
-            float: right;
+            float: left;
             font-size : 35px;
             margin: 10px 10px;
+            margin-left : 30px;
             transition: all 0.1s ease;
         }
 
@@ -832,7 +840,6 @@ a:hover {
         }
     }
 }
-
 
 
 // Reviews
