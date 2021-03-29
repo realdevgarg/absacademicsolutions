@@ -162,6 +162,8 @@ margin-top: 0px;
 .hero {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    justify-items: center;
 }
 
 .hero .left h1 {
@@ -183,6 +185,9 @@ margin-top: 0px;
     margin-top: 40px !important;
     width: 320px !important;
     height: 400px !important;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
 }
 
         input, select{
@@ -520,6 +525,18 @@ grid-column: 2/3  !important;
 }
 
 
+/* FOOTER */
+
+footer {
+    background-image: url("/dist/img/footer-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer a {
+    line-height: 22px;
+}
+
 #mobile-footer {
     background-color: black;
     color: white;
@@ -529,9 +546,13 @@ grid-column: 2/3  !important;
 #mobile-footer   a {
         color: white;
     }
-    
-    #mobile-footera:hover {
-        /* color: $secondary-color; */
+ 
+    footer p {
+        line-height: 22px;
+    }
+
+    .bottom h6{
+        font-size : 15px;
     }
     
     #mobile-footer .top {
@@ -576,22 +597,23 @@ grid-column: 2/3  !important;
     }
     
 footer .left, footer .center {
-    border-bottom: 0.5px solid darkgrey;
+    border-bottom: 0.5px solid #383838;
     padding-bottom: 20px;
 }
 
 
     .bottom {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        border-top: 0.5px solid gainsboro;
+        grid-template-columns: 1fr ;
+        justify-content: center;
+        border-top: 0.5px solid #383838;
         padding: 20px 5px;
         letter-spacing: .5px;
         font-size: 14px !important;
     }
 
     .self-branding {
-    text-align: right;
+    text-align: center;
     }
     
     #love {
