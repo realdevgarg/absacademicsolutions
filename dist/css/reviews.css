@@ -2,18 +2,26 @@
 @import url("subject.css");
 @import url("media.css");
 
+
+/* Global */
 :root {
-    --primary-color: #673DE6;
+    --primary-color: #6558DA;
     --secondary-color: #00B68C;
   }
-  
 
-section{
-	position: relative;
-	background: white;
-    text-align: center;
+  /* Header */
+#mobile-header{
+	display: none !important;
 }
 
+.header svg{
+    margin-top: -5px !important;
+}
+
+
+.section-heading h1 {
+	padding: 30px 0px;
+}
 
 .swiper-wrapper {
     display: grid;
@@ -27,15 +35,13 @@ section{
     }
 
 	.reviews-wrap {
-		margin-top: -35px;
 		background-color: white !important;
 	}
 
     .testi-item {
-        height: 350px !important;
+        height: 360px !important;
         margin-bottom: 30px;
-        border: 1px solid var(--secondary-color) !important;
-        border-radius: 10px
+        border-radius: 20px
     }
 
 .testimonials-text {
@@ -43,7 +49,7 @@ section{
 	transition: all .3s ease-in-out;
 	background-color: white;
 	color : #673DE6;
-	height: 325px;
+	height: 370px;
 	border : 1px solid #00B68C;
 
 }
@@ -145,6 +151,18 @@ section{
 
 
 @media only screen and (max-width : 450px){
+
+	#mobile-header {
+		display: block !important;
+	}
+
+	.section-heading h1 {
+		margin-bottom: 20px;
+	}
+
+.reviews-wrap h1 {
+	padding: 0px 0px !important;
+}
 
 	.swiper-wrapper {
 		display: flex !important;

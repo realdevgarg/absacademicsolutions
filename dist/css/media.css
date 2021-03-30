@@ -40,6 +40,10 @@ margin-left: 2px !important;
     display: none !important;
 }
 
+.mobile {
+    display: block !important;
+}
+
 /* CTA */
 #chat {
     display: none;
@@ -362,7 +366,6 @@ text-align : center !important;
         text-align: center !important;
         margin-top : -25px !important;
     }
-    
 
 
 /* ABHILASHA SINGH */
@@ -417,7 +420,7 @@ text-align : center !important;
             margin-top: 20px !important;
         }
         .about-as p {
-            margin-top: 0px !important;
+            margin-top: 5px !important;
         }
 
         .about-as i {
@@ -434,9 +437,12 @@ text-align : center !important;
 margin-bottom: 20px !important;
 }
 
+.testimonials-text {
+	padding: 65px 50px 55px;
+}
+
 
 /* CONTACT */
-
 .contact-us-content {
     display: grid;
     grid-template-columns: auto !important;
@@ -448,6 +454,7 @@ display: flex;
 justify-content: center;
 justify-items: center;
 justify-self: center;
+margin-top: -5px !important;
 }
 
 
@@ -520,15 +527,15 @@ grid-column: 2/3  !important;
 }
 
 .college-logo {
-    width: 80px;
-    height: 80px;
+    width: 77px;
+    height: 77px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
 }
 
 #ul-divider {
-    margin: 17px auto !important;
+    margin: 15px auto !important;
 }
 
 
@@ -549,7 +556,6 @@ grid-column: 2/3  !important;
   }
 
 
-  
 .arrow {
     top: 50%;
     margin-top: -35px;
@@ -565,13 +571,9 @@ grid-column: 2/3  !important;
     margin-right: 10px;
   }
 
-.mobile {
-    display: block !important;
-}
 
 
 /* FOOTER */
-
 footer {
     background-image: url("/dist/img/footer-back.jpg");
     background-repeat: no-repeat;
@@ -579,7 +581,7 @@ footer {
 }
 
 footer a {
-    line-height: 22px;
+    line-height: var(--general-line-height);
 }
 
 #mobile-footer {
@@ -593,10 +595,10 @@ footer a {
     }
  
     footer p {
-        line-height: 22px;
+        line-height: var(--general-line-height);
     }
 
-    .bottom h6{
+    .bottom h4{
         font-size : 15px;
     }
     

@@ -98,7 +98,7 @@ button a {
   margin: auto;
 }
 
-.hero #book-class-form .btn:hover, header #buy-stationery:hover {
+#viewAllBtn:hover, .hero #book-class-form .btn:hover, header #buy-stationery:hover {
   background-color: #3225a7;
   cursor: pointer;
   transition: all 200ms ease;
@@ -627,9 +627,7 @@ header a:hover {
 }
 
 .reviews-wrap {
-  float: left;
   position: relative;
-  padding: 30px 0;
   background: #c9edff;
   z-index: 1;
   width: 100%;
@@ -648,51 +646,10 @@ header a:hover {
   color: white;
 }
 
-.reviews-wrap h1 {
-  padding-bottom: 40px;
-}
-
 .swiper-container {
   width: 100%;
   height: 100%;
   text-align: center;
-}
-
-.listing-carousel-button {
-  position: absolute;
-  top: 50%;
-  width: 80px;
-  height: 50px;
-  line-height: 50px;
-  margin-top: -25px;
-  z-index: 100;
-  cursor: pointer;
-  background: #6558DA;
-  box-shadow: 0 9px 26px rgba(58, 87, 135, 0.45);
-  transition: all 200ms linear;
-  outline: none;
-}
-
-.listing-carousel-button.listing-carousel-button-next {
-  right: -30px;
-  padding-right: 20px;
-  border-radius: 60px 0 0 60px;
-}
-
-.listing-carousel-button.listing-carousel-button-prev {
-  left: -30px;
-  padding-left: 20px;
-  border-radius: 0 60px 60px 0;
-}
-
-.listing-carousel-button.listing-carousel-button-next:hover {
-  right: -15px;
-  background: rgba(6, 27, 65, 0.4);
-}
-
-.listing-carousel-button.listing-carousel-button-prev:hover {
-  left: -15px;
-  background: rgba(6, 27, 65, 0.4);
 }
 
 .testi-item {
@@ -702,18 +659,16 @@ header a:hover {
 }
 
 .testimonials-text {
-  padding: 75px 50px 75px;
+  padding: 75px 50px 65px;
   overflow: hidden;
   background: #f5f6fa;
   border: 1ps solid #f1f1f1;
   border-radius: 10px;
   transition: all 200ms ease-in-out;
+  line-height: 1.65;
 }
 
 .testimonials-text-after {
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
   position: absolute;
   color: #00B68C;
   opacity: 0.3;
@@ -724,9 +679,6 @@ header a:hover {
 }
 
 .testimonials-text-before {
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
   position: absolute;
   color: #00B68C;
   opacity: 0.3;
@@ -739,11 +691,12 @@ header a:hover {
 .testimonials-avatar h3 {
   font-weight: 600;
   color: #6558DA;
+  font-family: "Montserrat", sans-serif;
 }
 
 .testimonials-avatar h4 {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   padding-top: 6px;
   color: #26282d;
 }
@@ -763,9 +716,8 @@ header a:hover {
 }
 
 .testi-avatar img {
-  width: 90px;
-  height: 90px;
-  float: left;
+  width: 100px;
+  height: 100px;
   border-radius: 100%;
   border: 6px solid #fff;
   box-shadow: 0 9px 26px rgba(58, 87, 135, 0.1);
@@ -777,9 +729,6 @@ header a:hover {
 }
 
 .testimonials-text p {
-  color: #878c9f;
-  font-size: 14px;
-  font-style: normal;
   line-height: 1.65;
   padding-bottom: 10px;
 }
@@ -847,11 +796,11 @@ header a:hover {
   grid-template-columns: 1fr 1fr;
 }
 .contact-us .left svg {
-  width: 575px;
+  width: 600px;
   height: 500px;
 }
 .contact-us .left #tree {
-  animation: treeMoving 3.5s infinite alternate ease-in;
+  animation: treeMoving 3s infinite alternate ease-in;
   transform-origin: bottom;
   transform-box: fill-box;
 }
@@ -899,7 +848,7 @@ header a:hover {
   }
 }
 .contact-us .right {
-  margin-top: 40px;
+  margin-top: 45px;
   display: flex;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
@@ -910,8 +859,12 @@ header a:hover {
   margin: 23px 0px;
   margin-left: 150px;
 }
+.contact-us .contact-us-content {
+  margin-top: -10px;
+}
 .contact-us .slim-card i {
-  font-size: 22px;
+  font-size: 26px;
+  margin-top: -5px;
 }
 .contact-us .social-icons i {
   font-size: 30px;
@@ -923,11 +876,8 @@ header a:hover {
   display: flex;
   justify-content: center;
   column-gap: 20px;
-  margin-bottom: 35px;
-  margin-top: 35px;
-}
-.contact-us .social-icons i {
-  font-size: 30px;
+  margin-bottom: 40px;
+  margin-top: 30px;
 }
 .contact-us .social-icons i:hover {
   color: #00B68C;
@@ -943,6 +893,7 @@ header a:hover {
   margin-left: 7px;
   color: white;
   font-size: 18px;
+  margin-bottom: -5px;
 }
 .contact-us button:hover {
   background-color: #00503e;
@@ -1029,16 +980,8 @@ header a:hover {
   background-image: url("/dist/img/gallery6.jpg");
 }
 
-.slide-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 .slide-content span {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #fff;
 }
 
@@ -1054,7 +997,7 @@ header a:hover {
 
 #arrow-left:hover {
   transition: all 400ms ease;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 #arrow-right:hover {
@@ -1063,14 +1006,14 @@ header a:hover {
 }
 
 #arrow-left {
-  border-width: 30px 40px 30px 0;
+  border-width: 20px 30px 20px 0;
   border-color: transparent #fff transparent transparent;
   left: 0;
   margin-left: 30px;
 }
 
 #arrow-right {
-  border-width: 30px 0 30px 40px;
+  border-width: 20px 0 20px 30px;
   border-color: transparent transparent transparent #fff;
   right: 0;
   margin-right: 30px;
@@ -1104,7 +1047,7 @@ header a:hover {
   background-size: cover;
 }
 #dextop-footer p {
-  line-height: 22px;
+  line-height: 1.65;
 }
 #dextop-footer a {
   color: white;
@@ -1123,7 +1066,7 @@ header a:hover {
   border-right: 0.5px solid #484848;
 }
 #dextop-footer .left p {
-  margin-top: -70px;
+  margin-top: -75px;
 }
 #dextop-footer .right {
   border-left: 0.5px solid #484848;
@@ -1156,25 +1099,12 @@ header a:hover {
 #dextop-footer .bottom .self-branding {
   text-align: right;
 }
-#dextop-footer .bottom h6 {
+#dextop-footer .bottom h4 {
   font-size: 14px;
+  font-family: "Poppins";
 }
 #dextop-footer .bottom #love {
   color: red;
-}
-
-@media (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
