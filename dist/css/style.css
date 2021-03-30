@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap");
 * {
   box-sizing: border-box;
@@ -9,8 +7,8 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
-  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
   color: #26282d;
 }
 
@@ -24,6 +22,11 @@ html {
 
 h1 {
   font-family: "Poppins";
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 26px;
 }
 
 h2, h3 {
@@ -32,17 +35,13 @@ h2, h3 {
 }
 
 .unicode {
-  font-size: 15px;
+  font-size: 14px;
   margin-left: 3px;
 }
 
 a {
   text-decoration: none;
   color: #333;
-}
-
-blockquote {
-  line-height: 1.4;
 }
 
 .section {
@@ -57,7 +56,7 @@ blockquote {
 }
 
 #svg-logo .cls-1 {
-  fill: #673DE6 !important;
+  fill: #6558DA !important;
 }
 
 /* width */
@@ -82,16 +81,15 @@ blockquote {
 }
 
 .contact-us button, #viewAllBtn, .hero #book-class-form .btn, header #buy-stationery {
-  min-width: 180px;
-  padding: 15px;
+  min-width: 170px;
   text-align: center;
   outline: none;
-  background-color: #673DE6;
+  background-color: #6558DA;
   border: none;
   border-radius: 20px;
   cursor: pointer;
   color: white;
-  padding: 15px 40px;
+  padding: 10px 40px;
 }
 
 button a {
@@ -99,10 +97,10 @@ button a {
   margin: auto;
 }
 
-.hero #book-class-form .btn:hover, header #buy-stationery:hover {
-  background-color: #3a16a7;
+.hero #book-class-form .btn:hover, header #buy-stationery:hover, .cta-btn:hover {
+  background-color: #3225a7;
   cursor: pointer;
-  transition: all 200ms ease 0s;
+  transition: all 200ms ease;
   transform: scale(0.99);
 }
 
@@ -112,9 +110,6 @@ button a {
 
 .body-top {
   background-color: #ffffff;
-  background-image: url("/dist/img/white-back-2.png");
-  background-attachment: fixed;
-  min-height: 100vh;
 }
 
 #cta {
@@ -125,7 +120,7 @@ button a {
 }
 
 #cta i {
-  font-size: 26px;
+  font-size: 30px;
 }
 
 #call {
@@ -137,7 +132,7 @@ button a {
 }
 
 .cta-btn {
-  background-color: #673DE6;
+  background-color: #6558DA;
   border: none;
   outline: none;
   color: white;
@@ -146,10 +141,6 @@ button a {
   cursor: pointer;
   border-radius: 50%;
   transition: all 200ms ease;
-}
-
-.cta-btn:hover {
-  background-color: #3a16a7;
 }
 
 .active {
@@ -163,15 +154,12 @@ button a {
 }
 .active svg {
   padding: 10px 0px;
-  height: 70px !important;
-  margin-top: 15px;
-}
-.nav-up {
-  top: -80px;
+  height: 72px !important;
+  margin-top: 13px;
 }
 
-#mobile-header {
-  display: none;
+.nav-up {
+  top: -80px;
 }
 
 header {
@@ -183,7 +171,6 @@ header {
   z-index: 1000;
   transition: all ease-out 0.5s;
   margin-top: -5px;
-  font-weight: bold;
 }
 header .navigation {
   justify-self: right;
@@ -197,13 +184,15 @@ header svg {
 header li {
   list-style-type: none;
   float: left;
-  padding: 10px 30px;
+  padding: 0px 30px;
+  font-weight: bold;
 }
 header #buy-stationery {
   padding: 10px 40px;
+  font-weight: normal;
 }
 header a:hover {
-  transition: all 200ms;
+  transition: all 200ms ease;
   color: #00B68C;
 }
 
@@ -225,7 +214,7 @@ header a:hover {
   margin: 60px auto;
 }
 .formSubmitted #get {
-  color: #616978;
+  color: #26282d;
 }
 
 .formStatus {
@@ -435,10 +424,10 @@ header a:hover {
   color: #171A22 !important;
 }
 .courses-subjects h2 {
-  color: #673DE6;
+  color: #6558DA;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 26px;
 }
 .courses-subjects .para {
   color: #26282d;
@@ -456,7 +445,7 @@ header a:hover {
 }
 
 .announcements .left img {
-  fill: #673DE6 !important;
+  fill: #6558DA !important;
   width: 50px !important;
   height: 50px !important;
 }
@@ -475,7 +464,7 @@ header a:hover {
   text-align: left !important;
 }
 .announcements .left svg {
-  fill: #673DE6 !important;
+  fill: #6558DA !important;
 }
 .announcements .left .content {
   margin-right: 10px;
@@ -483,7 +472,7 @@ header a:hover {
 .announcements .left #new {
   margin-left: 120px;
   color: white;
-  background-color: #673DE6;
+  background-color: #6558DA;
 }
 .announcements .left #new h2 {
   margin-bottom: 3px !important;
@@ -550,7 +539,7 @@ header a:hover {
   color: #171A22 !important;
 }
 .why-choose-us .why-card svg {
-  fill: #673DE6 !important;
+  fill: #6558DA !important;
 }
 .why-choose-us .why-card {
   padding: 15px;
@@ -565,7 +554,7 @@ header a:hover {
 .why-choose-us .para {
   color: #26282d;
   margin: 10px auto;
-  line-height: 1.75;
+  line-height: 1.45;
 }
 
 #dextop-as-pic {
@@ -581,7 +570,7 @@ header a:hover {
 }
 
 .about-us .content p, .about-us .content h3 {
-  line-height: 1.75;
+  line-height: 1.45;
   padding: 0px 40px;
 }
 .about-us .content p {
@@ -676,7 +665,7 @@ header a:hover {
   margin-top: -25px;
   z-index: 100;
   cursor: pointer;
-  background: #673DE6;
+  background: #6558DA;
   box-shadow: 0 9px 26px rgba(58, 87, 135, 0.45);
   transition: all 200ms linear;
   outline: none;
@@ -747,14 +736,14 @@ header a:hover {
 
 .testimonials-avatar h3 {
   font-weight: 600;
-  color: #673DE6;
+  color: #6558DA;
 }
 
 .testimonials-avatar h4 {
   font-weight: 400;
   font-size: 12px;
   padding-top: 6px;
-  color: #616978;
+  color: #26282d;
 }
 
 .testimonials-carousel .swiper-slide {
@@ -788,10 +777,9 @@ header a:hover {
 .testimonials-text p {
   color: #878c9f;
   font-size: 14px;
-  font-style: italic;
-  line-height: 24px;
+  font-style: normal;
+  line-height: 1.45;
   padding-bottom: 10px;
-  font-weight: 500;
 }
 
 .text-link {
@@ -837,7 +825,7 @@ header a:hover {
 
 .tc-pagination .swiper-pagination-bullet, .tc-pagination2.swiper-pagination-bullet {
   opacity: 1;
-  background: #673DE6;
+  background: #6558DA;
   margin: 0 2px;
   width: 10px;
   height: 10px;
@@ -969,7 +957,7 @@ header a:hover {
   align-items: center;
 }
 .also-here .content #ub-logo {
-  width: 140px;
+  width: 130px;
 }
 .also-here .content #to-logo {
   width: 280px;
@@ -1118,7 +1106,7 @@ header a:hover {
 }
 #dextop-footer a {
   color: white;
-  line-height: 1.75;
+  line-height: 1.45;
 }
 #dextop-footer a:hover {
   color: #00B68C;
@@ -1130,13 +1118,13 @@ header a:hover {
   padding: 40px 40px;
 }
 #dextop-footer .left {
-  border-right: 0.5px solid #383838;
+  border-right: 0.5px solid #484848;
 }
 #dextop-footer .left p {
   margin-top: -70px;
 }
 #dextop-footer .right {
-  border-left: 0.5px solid #383838;
+  border-left: 0.5px solid #484848;
 }
 #dextop-footer .right .contact-links {
   margin-top: 20px;
@@ -1159,7 +1147,7 @@ header a:hover {
 #dextop-footer .bottom {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-top: 1px solid #383838;
+  border-top: 1px solid #484848;
   padding: 20px 40px;
   letter-spacing: 0.5px;
 }

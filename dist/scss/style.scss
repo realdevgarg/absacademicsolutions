@@ -1,18 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap');
-// ANIMATION
-
 
 // COLORS
-$primary-color : #673DE6;
+$primary-color : #6558DA;
 $secondary-color :  #00B68C ; 
-// #45E0A8 ( Green ) #673DE6 ( blue ) ##3E0AC4 ( indigo ) ##00B68C
+// #45E0A8 ( Green ) #673DE6 ( blue ) ##3E0AC4 ( indigo ) ##00B68C #146eb4
 $light-back-color : rgba(246, 248, 255, 0.53);
 $link-color-1: #333; 
 $border-color : #d3d3d3;
-$light-text-color :#616978;
 $light-back-color : #c9edff;
 $sec-heading-color : #171A22;
 $para-color : #26282d;
@@ -22,13 +17,13 @@ $box-shadow-val : 0 30px 60px rgb(213 215 225 / 49%);
 // Font Family
 $main-heading-font : 'Poppins';
 $sub-heading-font : 'Montserrat', sans-serif;;
-$para-font : 'Arial', sans-serif;
+$para-font : 'Poppins', sans-serif;
 
 // Font Sizes
 $heading-font-size-1 : 35px;
-$heading-font-size-2 : 24px;
+$heading-font-size-2 : 26px;
 $para-font-size : 16px;
-$general-line-height : 1.75;
+$general-line-height : 1.45;
 
 // FC5181
 
@@ -40,7 +35,7 @@ $general-line-height : 1.75;
 
 body {
     font-family: $para-font;
-    overflow-x: hidden;
+    overflow-x: hidden !important; 
     color : $para-color;
 }
 
@@ -55,6 +50,11 @@ display: none;
 
 h1 {
     font-family: $main-heading-font;
+    font-size: $heading-font-size-1;
+}
+
+h2 {
+    font-size: $heading-font-size-2;
 }
 
 h2 , h3{
@@ -62,19 +62,14 @@ h2 , h3{
     font-weight: 600;
 }
 
-
 .unicode {
-    font-size: 15px;
-    margin-left: 3px
+    font-size: 14px;
+    margin-left: 3px;
    }
 
 a {
     text-decoration: none;
     color : $link-color-1;
-}
-
-blockquote {
-    line-height: 1.4;
 }
 
 .section {
@@ -118,8 +113,7 @@ blockquote {
 
 
 %btn-shared {
-    min-width: 180px;
-    padding: 15px;
+    min-width: 170px;
     text-align: center;
     outline: none;
     background-color: $primary-color;
@@ -127,7 +121,7 @@ blockquote {
     border-radius: 20px;
     cursor: pointer;
     color: white;
-    padding: 15px 40px;
+    padding: 10px 40px;
 }
 
 
@@ -139,15 +133,8 @@ button a {
     %btn-hover-primary {
     background-color: darken($color: $primary-color, $amount: 20%);
     cursor: pointer;
-    transition: all 200ms ease 0s;
+    transition: all 200ms ease;
     transform: scale(0.99);
-    }
-
-
-    %about {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 1fr 1fr;
     }
 
 
@@ -157,9 +144,6 @@ button a {
 
     .body-top {
         background-color: #ffffff;
-        background-image : url("/dist/img/white-back-2.png");
-        background-attachment: fixed;
-        min-height: 100vh;
     }
 
 
@@ -172,7 +156,7 @@ button a {
 }
 
 #cta i {
-    font-size : 26px;
+    font-size : 30px;
 }
 
 #call {
@@ -196,7 +180,7 @@ button a {
   }
   
 .cta-btn:hover {
-background-color: darken($color: $primary-color, $amount: 20);
+@extend %btn-hover-primary;
 }
 
 // -------- HEADER --------------
@@ -211,12 +195,8 @@ background-color: darken($color: $primary-color, $amount: 20);
 
     svg {
     padding: 10px 0px;
-    height: 70px !important;
-    margin-top: 15px;
-    }
-
-    .navigation {
-    // margin-top: 10px;
+    height: 72px !important;
+    margin-top: 13px;
     }
 }
 
@@ -224,10 +204,6 @@ background-color: darken($color: $primary-color, $amount: 20);
     top: -80px;
 }
 
-
-#mobile-header {
-    display: none;
-}
 
 header { 
         background-color: transparent !important;
@@ -238,8 +214,7 @@ header {
         z-index: 1000;
         transition: all ease-out .5s;
         margin-top: -5px;
-        font-weight: bold;
-    
+
         .navigation {
         justify-self: right;
         align-self: center;
@@ -254,12 +229,14 @@ header {
         li {
             list-style-type: none;
             float: left;
-            padding: 10px  30px;
+            padding: 0px  30px;
+            font-weight: bold;
         }
 
         #buy-stationery {
             @extend %btn-shared;
             padding: 10px 40px;
+            font-weight: normal;
         }
 
         #buy-stationery:hover {
@@ -267,7 +244,7 @@ header {
         }
 
         a:hover {
-            transition: all 200ms;
+            transition: all 200ms ease;
             color : $secondary-color;
         }
 }
@@ -297,7 +274,7 @@ header {
         }
 
         #get {
-            color : $light-text-color;
+            color : $para-color;
         }
 }
 
@@ -969,7 +946,7 @@ padding-bottom : 40px;
 	 font-weight:400;
 	 font-size:12px;
 	 padding-top:6px;
-	 color: $light-text-color;
+	 color: $para-color;
 }
 .testimonials-carousel .swiper-slide{
 	padding: 30px 0;
@@ -998,10 +975,9 @@ padding-bottom : 40px;
 .testimonials-text p{
 	color: #878c9f;
 	font-size: 14px;
-	font-style: italic;
-	line-height: 24px;
+	font-style: normal;
+	line-height: $general-line-height;
 	padding-bottom: 10px;
-	font-weight: 500;
 }
 .text-link{
 	position: absolute;
@@ -1215,7 +1191,7 @@ padding-bottom : 40px;
     align-items: center;
 
     #ub-logo {
-    width: 140px;
+    width: 130px;
     }
 
     #to-logo {
@@ -1404,7 +1380,7 @@ padding: 40px 40px;
 }
 
 .left {
-    border-right: 0.5px solid #383838;
+    border-right: 0.5px solid #484848;
     p {
         margin-top: -70px;
     }
@@ -1417,7 +1393,7 @@ padding: 40px 40px;
 // }
 
 .right {
-    border-left: 0.5px solid #383838;
+    border-left: 0.5px solid #484848;
 
     .contact-links {
         margin-top: 20px;
@@ -1446,7 +1422,7 @@ img {
 .bottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-top: 1px solid #383838;
+    border-top: 1px solid #484848;
     padding: 20px 40px;
     letter-spacing: .5px;
 
