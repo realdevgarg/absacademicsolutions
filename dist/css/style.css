@@ -106,7 +106,19 @@ button a {
 }
 
 .different {
-  color: #00B68C;
+  color: #00B68C !important;
+}
+.different .unicode {
+  font-size: 1px !important;
+}
+
+#dotted {
+  font-size: 16px !important;
+  margin-left: 3px;
+}
+
+#different {
+  color: #00B68C !important;
 }
 
 .body-top {
@@ -192,6 +204,7 @@ header li {
   float: left;
   padding: 0px 30px;
   font-weight: bold;
+  margin-top: 5px;
 }
 header #buy-stationery {
   padding: 10px 40px;
