@@ -162,4 +162,8 @@ section{
 	.testi-item {
 		margin-bottom: 75px;
 	}
+
+	#writeReview {
+		margin-top: 20px !important;
+	}
 }

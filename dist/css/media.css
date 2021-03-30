@@ -15,9 +15,10 @@ h1 {
 }
 
 
-#unicode {
-font-size: 16px !important;
+.unicode {
+font-size: 10px !important;
 }
+
 
 /* CTA */
 #chat {
@@ -69,12 +70,12 @@ p{
 
 .section {
     padding: 0px 20px !important; 
-    padding-bottom: 30px !important;
+    padding-bottom: 35px !important;
 }
 
 .section-topic {
-    padding-top: 25px;
-    padding-bottom: 10px !important;
+    padding-top: 35px;
+    padding-bottom: 15px !important;
 }
 
 
@@ -82,6 +83,10 @@ p{
 
 /* HEADER */
 #dextop-header {
+    display: none;
+}
+
+.sideNav a:last-child {
     display: none;
 }
 
@@ -185,15 +190,15 @@ margin-top: 0px;
 }
 
 .hero  h1 {
-    font-size: 24px !important;
+    font-size: 26px !important;
     margin-bottom : 5px;
     margin-top: 0px !important;
 
 }
 
 .hero-svg {
-    width: 330px;
-    height: 300px;
+    width: 340px;
+    height: 320px;
     margin-top: 20px !important;
     margin-bottom: -10px !important;
 }
@@ -232,9 +237,9 @@ grid-template-columns: 1fr !important;
 }
 
 .card {
-    width: 315px !important;
+    width: 320px !important;
     height: 170px !important;
-    margin: 10px 0px !important;
+    margin: 15px 0px !important;
 }
 
 
@@ -342,7 +347,7 @@ text-align : center !important;
 /* ABHILASHA SINGH */
 #mobile-as-pic {
     display: block;
-    margin-top : 30px;
+    margin-top : 40px;
 }
 
 
@@ -350,13 +355,11 @@ text-align : center !important;
     margin-left : 0px !important;
   }
 
-
 .about-as  h3 {
     text-align: center !important;
     display: flex;
     justify-content: center;
 }
-
 
 
 #about-divider {
@@ -390,7 +393,7 @@ text-align : center !important;
         }
 
         .about-as h3{
-            margin-top: 15px !important;
+            margin-top: 20px !important;
         }
         .about-as p {
             margin-top: 0px !important;
@@ -461,6 +464,10 @@ text-align: center !important;
     }
 
 /* WE ARE ALSO HERE */
+
+    .also-here {
+        padding-top: 20px !important;
+    }
 
     #ub-logo {
     width: 90px !important;

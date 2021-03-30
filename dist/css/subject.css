@@ -20,6 +20,8 @@ grid-column : 1/2  !important;
     margin-top : -10px;
 }
 
+
+
 .banner img {
     margin-bottom: 30px;
     width: 100%;
@@ -60,7 +62,7 @@ h1 {
     }
 
     .banner {
-        margin-top: -20px;
+        margin-top: 65px;
     }
 
     .down-content {
