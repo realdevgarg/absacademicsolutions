@@ -88,7 +88,7 @@ right : 20px;
 top : 20px;
 font-size:30px;
 cursor:pointer;
-margin-top: -5px;
+margin-top: 0px !important;
 }
 
 #mobile-header {
@@ -107,7 +107,7 @@ margin-top: -5px;
 #mobile-header svg {
 width: 70px;
 height: 70px;
-margin-top: 0px;
+margin-top: 5px !important;
 }
 
 .sideNav {
@@ -248,12 +248,13 @@ grid-template-columns: 1fr !important;
 }
 
 .cards h2 {
-        font-size : var(--heading-font-size-2) !important;
+        font-size : var(--heading-font-size-1) !important;
     }
 
 .subjects .para {
     margin: 10px auto !important;
     line-height: 22px;
+    font-size: 14px !important;
 }
 
 
@@ -270,7 +271,13 @@ grid-template-columns: 1fr !important;
 #new {
     margin-left: 0px !important;
 }
-#a-subject {
+
+#all-subject {
+    font-size : 14px !important;
+}
+
+
+p {
     font-size : 14px !important;
 }
 
@@ -282,6 +289,10 @@ grid-template-columns: 1fr !important;
 .announcements .left img {
     width: 35px !important;
     height: 35px !important;
+}
+
+#ds {
+    padding-top: 5px;
 }
 
 .mini-card {
@@ -306,6 +317,7 @@ grid-template-columns: 1fr !important;
     .announcements .right svg {
         width : 330px !important;
         margin: 0 auto  !important;
+
     }
 
 /* WHY CHOOSE US */
@@ -318,10 +330,15 @@ text-align : center !important;
 
 .why-card p {
     line-height: 20px !important;
+    margin: 2px auto !important;
+    font-size : 14px !important;
 }
 
 
 
+.why-card h3 {
+    margin: 0px !important;
+}
 /* ABOUT US */
 .about-abs, .about-as{
     grid-template-columns: 1fr !important; 

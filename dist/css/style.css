@@ -98,7 +98,7 @@ button a {
   margin: auto;
 }
 
-.hero #book-class-form .btn:hover, header #buy-stationery:hover, .cta-btn:hover {
+.hero #book-class-form .btn:hover, header #buy-stationery:hover {
   background-color: #3225a7;
   cursor: pointer;
   transition: all 200ms ease;
@@ -142,6 +142,11 @@ button a {
   cursor: pointer;
   border-radius: 50%;
   transition: all 200ms ease;
+}
+
+.cta-btn:hover {
+  transition: all 200ms ease;
+  background-color: #00503e;
 }
 
 .active {
@@ -460,12 +465,16 @@ header a:hover {
 }
 .announcements .mini-card {
   width: 540px;
-  height: 130px;
+  height: 133px;
   margin: 30px 0px;
   display: grid;
   grid-template-columns: 80% 15%;
   align-items: center;
   text-align: left !important;
+}
+.announcements .mini-card:hover {
+  transition: transform 300ms ease;
+  transform: scale(1.004);
 }
 .announcements .left svg {
   fill: #6558DA !important;
@@ -474,21 +483,21 @@ header a:hover {
   margin-right: 10px;
 }
 .announcements .left #new {
-  margin-left: 120px;
+  margin-left: 123px;
   color: white;
   background-color: #6558DA;
 }
 .announcements .left #new h2 {
-  margin-bottom: 3px !important;
+  margin-bottom: 5px !important;
 }
-.announcements .left #a-subject {
+.announcements .left #all-subject {
   font-size: 22px;
 }
 .announcements .left p {
-  margin-top: 5px;
+  margin-top: 4px;
 }
 .announcements .ill {
-  margin-left: -40px !important;
+  margin-left: -43px !important;
 }
 .announcements .right {
   margin-top: 33px;
@@ -552,21 +561,10 @@ header a:hover {
   width: 75px;
   height: 75px;
 }
-.why-choose-us h2 {
-  margin-top: 5px;
-}
 .why-choose-us .para {
   color: #26282d;
   margin: 10px auto;
-  line-height: 1.45;
-}
-
-#dextop-as-pic {
-  display: block;
-}
-
-#mobile-as-pic {
-  display: none;
+  line-height: 1.65;
 }
 
 #about-divider {
@@ -574,7 +572,7 @@ header a:hover {
 }
 
 .about-us .content p, .about-us .content h3 {
-  line-height: 1.45;
+  line-height: 1.65;
   padding: 0px 40px;
 }
 .about-us .content p {
@@ -617,14 +615,14 @@ header a:hover {
   float: left;
   font-size: 30px;
   margin: 10px 0px;
-  margin-left: 30px;
+  margin-left: 25px;
   transition: all 200ms ease;
 }
 .about-us .about-as i:hover {
   color: #00B68C;
 }
 .about-us .about-as .social-icons {
-  margin-right: 35px;
+  margin-left: 15px;
   margin-top: 10px;
 }
 
@@ -782,7 +780,7 @@ header a:hover {
   color: #878c9f;
   font-size: 14px;
   font-style: normal;
-  line-height: 1.45;
+  line-height: 1.65;
   padding-bottom: 10px;
 }
 
@@ -1110,7 +1108,7 @@ header a:hover {
 }
 #dextop-footer a {
   color: white;
-  line-height: 1.45;
+  line-height: 1.65;
 }
 #dextop-footer a:hover {
   color: #00B68C;
