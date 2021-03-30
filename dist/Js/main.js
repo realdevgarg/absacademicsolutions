@@ -2,7 +2,7 @@
 let formEl = document.querySelector("form");
 let stName = document.querySelector("#nameInput");
 let phoneNumber = document.querySelector("#phoneNumberInput");
-let subjectEl = document.querySelector("subjectInput");
+let subjectEl = document.querySelector("select");
 let submitBtn = document.querySelector("#book-btn");
 let formStatus = document.querySelector('.formStatus')
 let howCorrect = 0;
@@ -27,20 +27,25 @@ formEl.addEventListener("submit", (e) => {
   else {
     howCorrect++;
     setSuccessFor(stName);
+    subjectEl.style.borderColor = '#00B68C';
   }
 
   // CHECKING FOR PHONE NUMBER
   if (phoneNumberValue === "") {
     setErrorFor(phoneNumber, "Phone number can't be blank");
+    
   }
 
   else if (!numberCheck(phoneNumberValue)) {
     setErrorFor(phoneNumber, "Enter a valid 10 digit Mobile Number");
+    
   } 
   
   else {
     howCorrect++;
     setSuccessFor(phoneNumber);
+    subjectEl.style.borderColor = '#00B68C';
+
   }
 
 // setSuccessFor(subjectEl);

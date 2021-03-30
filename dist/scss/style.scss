@@ -20,7 +20,7 @@ $sub-heading-font : 'Montserrat', sans-serif;;
 $para-font : 'Poppins', sans-serif;
 
 // Font Sizes
-$heading-font-size-1 : 35px;
+$heading-font-size-1 : 30px;
 $heading-font-size-2 : 26px;
 $para-font-size : 16px;
 $general-line-height : 1.45;
@@ -51,6 +51,7 @@ display: none;
 h1 {
     font-family: $main-heading-font;
     font-size: $heading-font-size-1;
+    font-weight: bold;
 }
 
 h2 {
@@ -121,7 +122,7 @@ a {
     border-radius: 20px;
     cursor: pointer;
     color: white;
-    padding: 10px 40px;
+    padding: 15px 40px;
 }
 
 
@@ -168,7 +169,7 @@ button a {
 }
 
 .cta-btn {
-    background-color: $primary-color;
+    background-color: $secondary-color;
     border: none;
     outline : none;
     color: white;
@@ -294,19 +295,17 @@ header {
     margin-top: 28px;
 
      svg {
-         margin-top: -33px;
-         margin-bottom: 23px;
+         margin-top: -30px;
+         margin-bottom: 20px;
      }
 
      h1 {   
-        font-size: 29px;
-        font-weight: bold;
+        font-size: $heading-font-size-1;
         font-family: $main-heading-font;
-        margin-bottom: 3px;
-     }
+      }
 
      #white-circle {
-     animation: rotate-circle 3s infinite linear;
+     animation: rotate-circle 1.5s infinite linear;
      transform-origin: center;
      transform-box:  fill-box;
      }
@@ -331,11 +330,10 @@ header {
      @keyframes move-sir-hand {
         from {
            transform: rotateZ(0deg);
-           transform: rotateX(0deg);
         }
         
         to {
-            transform: rotateZ(5deg);
+            transform: rotateZ(6deg);
         }
     }
 
@@ -409,10 +407,10 @@ header {
     
 
     #book-class-form {
-    margin-left: 120px;
+    margin-left: 122px;
     margin-top: 5px;
     background-color: white;
-    width: 440px;
+    width: 445px;
     height: 475px;
     border: 2px solid $border-color;
     border-radius: 40px;
@@ -444,7 +442,7 @@ header {
     
         input, select{
         padding: 10px;
-        width: 340px;
+        width: 330px;
         outline: none;
         border: none;
         margin: 0 auto;
@@ -452,6 +450,7 @@ header {
         margin-bottom: 30px;
         border-radius: 5px;
         border: 1px solid $border-color;
+        background-color: white;
     }
 
     h2 {
@@ -474,17 +473,13 @@ header {
     }
 
     label {
-        margin-left: 50px;
+        margin-left: 57px;
     }
 
 // FORM 
 .input.error small {
     visibility: visible;
   }
-  
-  input {
-    background-color: white; 
-}
 
   .input.error input {
     border-color: #e75c3c;
@@ -504,7 +499,7 @@ header {
     color: #e75c3c;
     visibility: hidden;
     margin-top: -25px;
-    margin-left: 50px;
+    margin-left: 57px;
     margin-bottom: 20px;
   }
 }
@@ -527,7 +522,7 @@ header {
         border-radius: 20px;
         width: 350px;
         height: 200px;
-        margin : 15px 0px;
+        margin : 20px 0px;
         box-shadow: 0 30px 60px rgb(213 215 225 / 49%);
     }
 
@@ -549,7 +544,6 @@ color : $sec-heading-color!important;
 
 h2 {
     color : $primary-color;
-    font-family: $sub-heading-font;
     font-weight: bold;      
     font-size: $heading-font-size-2;
     }
@@ -564,6 +558,7 @@ a {
     color: grey;
 }
 
+
 a:hover {
     color: $secondary-color;
 }
@@ -571,6 +566,20 @@ a:hover {
 #btech {
     grid-column: 1 / 2  !important;
 }
+
+#bsc h2 {
+margin-top: -20px;
+}
+
+#cl h2 {
+    margin-top: -20px;
+    }
+   
+    #school h2 {
+        margin-top: -20px;
+        }
+        
+
 }
 
 // Announcement
