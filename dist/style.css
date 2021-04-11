@@ -57,7 +57,7 @@ a {
 }
 
 #svg-logo .cls-1 {
-  fill: #1877f2 !important;
+  fill: #FF1213 !important;
 }
 
 /* width */
@@ -85,7 +85,7 @@ a {
   min-width: 170px;
   text-align: center;
   outline: none;
-  background-color: #1877f2;
+  background-color: #FF1213;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -99,14 +99,14 @@ button a {
 }
 
 #viewAllBtn:hover, .hero #book-class-form .btn:hover, header #buy-stationery:hover {
-  background-color: #3225a7;
+  background-color: #ab0001;
   cursor: pointer;
   transition: all 200ms ease;
   transform: scale(0.99);
 }
 
 .different {
-  color: #00BEBA !important;
+  color: orange !important;
 }
 .different .unicode {
   font-size: 1px !important;
@@ -118,7 +118,7 @@ button a {
 }
 
 #different {
-  color: #00BEBA !important;
+  color: orange !important;
 }
 
 .body-top {
@@ -145,7 +145,7 @@ button a {
 }
 
 .cta-btn {
-  background-color: #00BEBA;
+  background-color: orange;
   border: none;
   outline: none;
   color: white;
@@ -158,7 +158,7 @@ button a {
 
 .cta-btn:hover {
   transition: all 200ms ease;
-  background-color: #00503e;
+  background-color: #996300;
 }
 
 .active {
@@ -212,7 +212,7 @@ header #buy-stationery {
 }
 header a:hover {
   transition: all 200ms ease;
-  color: #00BEBA;
+  color: orange;
 }
 
 .formSubmitted input, .formSubmitted label, .formSubmitted h2, .formSubmitted select {
@@ -363,7 +363,7 @@ header a:hover {
 }
 .hero #book-class-form #my-form-status {
   text-align: center;
-  color: #00BEBA;
+  color: orange;
   margin-top: -20px;
 }
 .hero #book-class-form input, .hero #book-class-form select {
@@ -397,11 +397,11 @@ header a:hover {
   border-color: #e75c3c;
 }
 .hero #book-class-form .input.success select {
-  border-color: #00BEBA;
+  border-color: orange;
   background-color: white;
 }
 .hero #book-class-form .input.success input {
-  border-color: #00BEBA;
+  border-color: orange;
   background-color: white;
 }
 .hero #book-class-form small {
@@ -432,13 +432,13 @@ header a:hover {
 }
 
 .courses-subjects {
-  background-color: #1877f2;
+  background-color: #c9edff;
 }
 .courses-subjects h1 {
   color: #171A22 !important;
 }
 .courses-subjects h2 {
-  color: #1877f2;
+  color: #FF1213;
   font-weight: bold;
   font-size: 26px;
 }
@@ -451,7 +451,7 @@ header a:hover {
   color: grey;
 }
 .courses-subjects a:hover {
-  color: #00BEBA;
+  color: orange;
 }
 .courses-subjects #btech {
   grid-column: 1/2 !important;
@@ -467,7 +467,7 @@ header a:hover {
 }
 
 .announcements .left img {
-  fill: #1877f2 !important;
+  fill: #FF1213 !important;
   width: 50px !important;
   height: 50px !important;
 }
@@ -490,7 +490,7 @@ header a:hover {
   transform: scale(1.004);
 }
 .announcements .left svg {
-  fill: #1877f2 !important;
+  fill: #FF1213 !important;
 }
 .announcements .left .content {
   margin-right: 10px;
@@ -498,7 +498,7 @@ header a:hover {
 .announcements .left #new {
   margin-left: 123px;
   color: white;
-  background-color: #1877f2;
+  background-color: #FF1213;
 }
 .announcements .left #new h2 {
   margin-bottom: 5px !important;
@@ -559,13 +559,13 @@ header a:hover {
 }
 
 .why-choose-us {
-  background-color: #1877f2;
+  background-color: #c9edff;
 }
 .why-choose-us h1 {
   color: #171A22 !important;
 }
 .why-choose-us .why-card svg {
-  fill: #1877f2 !important;
+  fill: #FF1213 !important;
 }
 .why-choose-us .why-card {
   padding: 15px;
@@ -632,7 +632,7 @@ header a:hover {
   transition: all 200ms ease;
 }
 .about-us .about-as i:hover {
-  color: #00BEBA;
+  color: orange;
 }
 .about-us .about-as .social-icons {
   margin-left: 15px;
@@ -641,7 +641,7 @@ header a:hover {
 
 .reviews-wrap {
   position: relative;
-  background: #1877f2;
+  background: #c9edff;
   z-index: 1;
   width: 100%;
   text-align: center;
@@ -683,7 +683,7 @@ header a:hover {
 
 .testimonials-text-after {
   position: absolute;
-  color: #00BEBA;
+  color: orange;
   opacity: 0.3;
   font-size: 35px;
   transition: all 400ms linear;
@@ -693,7 +693,7 @@ header a:hover {
 
 .testimonials-text-before {
   position: absolute;
-  color: #00BEBA;
+  color: orange;
   opacity: 0.3;
   font-size: 35px;
   transition: all 400ms linear;
@@ -703,7 +703,7 @@ header a:hover {
 
 .testimonials-avatar h3 {
   font-weight: 600;
-  color: #1877f2;
+  color: #FF1213;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -789,7 +789,7 @@ header a:hover {
 
 .tc-pagination .swiper-pagination-bullet, .tc-pagination2.swiper-pagination-bullet {
   opacity: 1;
-  background: #1877f2;
+  background: #FF1213;
   margin: 0 2px;
   width: 10px;
   height: 10px;
@@ -883,7 +883,7 @@ header a:hover {
   font-size: 30px;
 }
 .contact-us a h5:hover {
-  color: #00BEBA;
+  color: orange;
 }
 .contact-us .social-icons {
   display: flex;
@@ -893,13 +893,13 @@ header a:hover {
   margin-top: 30px;
 }
 .contact-us .social-icons i:hover {
-  color: #00BEBA;
+  color: orange;
 }
 .contact-us button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #00BEBA;
+  background-color: orange;
   transition: all 200ms ease;
 }
 .contact-us button i {
@@ -909,7 +909,7 @@ header a:hover {
   margin-bottom: -5px;
 }
 .contact-us button:hover {
-  background-color: #00503e;
+  background-color: #996300;
 }
 .contact-us .chat-btn {
   display: flex;
@@ -1037,7 +1037,7 @@ header a:hover {
 }
 
 #btt {
-  background-color: #00BEBA;
+  background-color: orange;
   color: white;
   padding: 10px;
   width: 100%;
@@ -1048,7 +1048,7 @@ header a:hover {
 }
 
 #btt:hover {
-  background-color: #00503e;
+  background-color: #996300;
 }
 
 #dextop-footer {
@@ -1067,7 +1067,7 @@ header a:hover {
   line-height: 1.65;
 }
 #dextop-footer a:hover {
-  color: #00BEBA;
+  color: orange;
 }
 #dextop-footer .top {
   text-align: center;
