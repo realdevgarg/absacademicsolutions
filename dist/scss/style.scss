@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap');
 
 // COLORS
-$primary-color : #FF1213;
-$secondary-color : orange ; 
+$primary-color : #1877F2;
+$secondary-color : #F80057 ; 
 // #45E0A8 ( Green ) #673DE6 ( blue ) ##3E0AC4 ( indigo ) ##00B68C #146eb4 #6558DA
 $light-back-color : rgba(246, 248, 255, 0.53);
 $link-color-1: #333; 
@@ -193,6 +193,8 @@ button a {
     cursor: pointer;
     border-radius: 50%;
     transition : all 200ms ease;
+    border : 1px solid white;
+
   }
   
 .cta-btn:hover {
@@ -210,7 +212,7 @@ background-color: darken($color: $secondary-color, $amount: 20);
     width : 100%;
     margin-top: -15px;
 
-    svg {
+    img {
     padding: 10px 0px;
     height: 72px !important;
     margin-top: 13px;
@@ -221,12 +223,25 @@ background-color: darken($color: $secondary-color, $amount: 20);
     top: -80px;
 }
 
+// TOP Announcement
+.top-announcement {
+background-color: $secondary-color;
+padding: 5px 20px;
+color : white;
+font-size : 14px;
+
+span {
+    text-align: right;
+    float: right;
+}
+}
+
 
 header { 
         background-color: transparent !important;
         padding: 0px 40px;
         display: grid;
-        grid-template-columns: 25% 75%;
+        grid-template-columns: 20% 80%;
         height: 85px;
         z-index: 1000;
         transition: all ease-out .5s;
@@ -237,16 +252,18 @@ header {
         align-self: center;
         }
 
-       svg {
-           max-width: 140px;
-           max-height: 100px;
-           cursor: pointer;
-       }
- 
+
+        img {
+            max-width: 140px;
+            max-height: 100px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+     
         li {
             list-style-type: none;
             float: left;
-            padding: 0px  30px;
+            padding: 0px  25px;
             font-weight: bold;
             margin-top: 5px;
         }
@@ -255,6 +272,7 @@ header {
             @extend %btn-shared;
             padding: 10px 40px;
             font-weight: normal;
+            background-color: $primary-color;
         }
 
         #buy-stationery:hover {
@@ -263,7 +281,7 @@ header {
 
         a:hover {
             transition: all 200ms ease;
-            color : $secondary-color;
+            color : $link-color-1;
         }
 }
 
@@ -304,12 +322,188 @@ header {
         padding-bottom : 20px;
     }
 }
-// HOME 
+
+// MODAL
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 10;
+    background-color: rgba($color: #000000, $alpha: 0) !important;
+
+ button {
+        outline: none;
+        border : none;
+        color : white;
+        background-color: $secondary-color;
+        padding : 10px;
+        cursor: pointer;
+        border-radius: 25%;
+        margin-left: 80px;
+    }
+
+
+    button:hover {
+        background-color: darken($color:$secondary-color, $amount: 10%);
+    }
+}
+
+  
+.modal-body {
+display: flex;
+justify-content: center;
+}
+
+
+
+
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  
+  #overlay {
+    position: fixed !important;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8) !important;
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+
+//   FORM
+
+#book-class-form {
+    margin-left: 122px;
+    margin-top: 5px;
+    background-color: white;
+    width: 445px;
+    height: 475px;
+    border: 2px solid $border-color;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    #book-btn {
+    @extend %btn-shared;
+    }
+
+    #checked {
+    display: none;
+    animation : checkAnimation 2s ease infinite alternate;
+    }
+
+    @keyframes checkAnimation {
+        from {
+        transform: scale(1);
+        }
+
+        to {
+        transform: scale(0.8);
+        }
+    }
+
+
+    #my-form-status {
+        text-align: center;
+        color : $secondary-color;
+        margin-top: -20px;
+    }
+    
+        input, select{
+        padding: 10px;
+        width: 330px;
+        outline: none;
+        border: none;
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        border: 1px solid $border-color;
+        background-color: white;
+    }
+
+    h2 {
+        font-family: $main-heading-font;
+        padding: 20px 0 30px 0;
+        text-align: center;
+    }
+
+  
+    .input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-left: 57px;
+    }
+
+// FORM 
+.input.error small {
+    visibility: visible;
+  }
+
+  .input.error input {
+    border-color: #e75c3c;
+  }
+  
+   .input.success select {
+    border-color: $secondary-color;
+    background-color: white; 
+  }
+
+  .input.success input {
+    border-color: $secondary-color;
+    background-color: white;
+  }
+
+  small {
+    color: #e75c3c;
+    visibility: hidden;
+    margin-top: -25px;
+    margin-left: 57px;
+    margin-bottom: 20px;
+  }
+}
+
+  // HOME 
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 40px;
     margin-top: 28px;
+
+    .left  {
+        display: flex;
+        justify-content: center;
+        flex-direction : column;
+        padding-left: 60px;
+        
+
+    .btn {
+        @extend %btn-shared;
+        margin-top: 60px;
+        width: 225px !important;
+    }
+
+}
+
+    .btn:hover {
+        @extend %btn-hover-primary;
+    }
 
      svg {
          margin-top: -30px;
@@ -319,6 +513,14 @@ header {
      h1 {   
         font-size: $heading-font-size-1;
         font-family: $main-heading-font;
+        font-size : 38px;
+      }
+
+      h2 {
+          color : #27282d;
+          font-size : 20px;
+          margin-top: 20px;
+          line-height: 30px;
       }
 
      #white-circle {
@@ -420,107 +622,7 @@ header {
                     transform: rotateZ(-5deg);
                 }
             }
-
-    
-
-    #book-class-form {
-    margin-left: 122px;
-    margin-top: 5px;
-    background-color: white;
-    width: 445px;
-    height: 475px;
-    border: 2px solid $border-color;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    #checked {
-    display: none;
-    animation : checkAnimation 2s ease infinite alternate;
-    }
-
-    @keyframes checkAnimation {
-        from {
-        transform: scale(1);
-        }
-
-        to {
-        transform: scale(0.8);
-        }
-    }
-
-
-    #my-form-status {
-        text-align: center;
-        color : $secondary-color;
-        margin-top: -20px;
-    }
-    
-        input, select{
-        padding: 10px;
-        width: 330px;
-        outline: none;
-        border: none;
-        margin: 0 auto;
-        margin-top: 5px;
-        margin-bottom: 30px;
-        border-radius: 5px;
-        border: 1px solid $border-color;
-        background-color: white;
-    }
-
-    h2 {
-        font-family: $main-heading-font;
-        padding: 20px 0 30px 0;
-        text-align: center;
-    }
-
-    .btn {
-        @extend %btn-shared;
-    }
-
-    .btn:hover {
-        @extend %btn-hover-primary;
-    }
-
-    .input {
-        display: flex;
-        flex-direction: column;
-    }
-
-    label {
-        margin-left: 57px;
-    }
-
-// FORM 
-.input.error small {
-    visibility: visible;
-  }
-
-  .input.error input {
-    border-color: #e75c3c;
-  }
-  
-   .input.success select {
-    border-color: $secondary-color;
-    background-color: white; 
-  }
-
-  .input.success input {
-    border-color: $secondary-color;
-    background-color: white;
-  }
-
-  small {
-    color: #e75c3c;
-    visibility: hidden;
-    margin-top: -25px;
-    margin-left: 57px;
-    margin-bottom: 20px;
-  }
-}
-}
+        }    
 
 // SHARING 
 %card-wrap-share {
@@ -543,9 +645,20 @@ header {
         box-shadow: 0 30px 60px rgb(213 215 225 / 49%);
     }
 
+
 // SUBJECTS 
+
+
+
 .courses-subjects {
 background-color:$light-back-color;
+
+
+#also {
+    text-align: center;
+    color : black;
+    padding-top: 40px;
+}
 
 .subjects {
 @extend %card-wrap-share;
@@ -767,6 +880,11 @@ margin-top: -20px;
 }
 
 .about-us {    
+
+    // .fa-phone-alt {
+    // font-size : 15px !important;
+    // }
+
     .content {
         p, h3 {
             line-height: $general-line-height;
@@ -845,11 +963,16 @@ margin-top: -20px;
 // Reviews
 .reviews-wrap{
 	position: relative;
-	background: $light-back-color;
+	background: $secondary-color;
 	z-index: 1;
 	width: 100%;
     text-align: center;
+
+    h1 {
+        color : white
+    }
 }
+
 
 .fa-caret-left {
     color : white;
@@ -992,7 +1115,7 @@ margin-top: -20px;
 
 .tc-pagination .swiper-pagination-bullet, .tc-pagination2.swiper-pagination-bullet{
 	opacity: 1;
-	background: $primary-color;
+	background: white;
 	margin:0 2px;
 	width: 10px;
 	height: 10px;
@@ -1096,6 +1219,9 @@ margin-top: -20px;
         font-family: $sub-heading-font;
     }
 
+    h5 {
+        font-size : 18px !important;
+    }
     .slim-card {
         display: grid;
         grid-template-columns: 10% 90%;
@@ -1139,7 +1265,7 @@ margin-top: -20px;
      justify-content: center;
      align-items: center;
     @extend %btn-shared;
-    background-color: $secondary-color;
+    background-color: $primary-color;
     transition: all 200ms ease;
 
             i {
@@ -1168,6 +1294,16 @@ margin-top: -20px;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
+    
+
+    img {
+        transition: all 0.3s ease;
+    }
+
+
+    img:hover {
+    transform: scale(1.1);
+    }
 
     #ub-logo {
     width: 130px;
