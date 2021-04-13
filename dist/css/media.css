@@ -79,6 +79,12 @@ margin-left: 2px !important;
 }
 
 
+.modal button {
+    margin-top: 20px;
+    margin-left: 20px !important;
+}
+
+
 /* HEADER */
 
 .top-announcement {
