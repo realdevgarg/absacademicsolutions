@@ -8,122 +8,122 @@ let formStatus = document.querySelector('.formStatus')
 let howCorrect = 0;
 let formAnswer;
 
-// formEl.addEventListener("submit", (e) => {
-//   howCorrect = 0;
-//   e.preventDefault();  
-//   let nameValue = stName.value.trim();
-//   let phoneNumberValue = phoneNumber.value.trim();
-//   let x = e;
+formEl.addEventListener("submit", (e) => {
+  howCorrect = 0;
+  e.preventDefault();  
+  let nameValue = stName.value.trim();
+  let phoneNumberValue = phoneNumber.value.trim();
+  let x = e;
 
-//   //  CHECKING FOR NAME
-//   if (nameValue === ""){
-//     setErrorFor(stName, "Name can't be blank");
-//   } 
+  //  CHECKING FOR NAME
+  if (nameValue === ""){
+    setErrorFor(stName, "Name can't be blank");
+  } 
 
-//   else if (!isNaN(nameValue)){
-//     setErrorFor(stName, "Name can't include numbers")
-//   }
+  else if (!isNaN(nameValue)){
+    setErrorFor(stName, "Name can't include numbers")
+  }
 
-//   else {
-//     howCorrect++;
-//     setSuccessFor(stName);
-//     subjectEl.style.borderColor = '#00B68C';
-//   }
+  else {
+    howCorrect++;
+    setSuccessFor(stName);
+    subjectEl.style.borderColor = '#00B68C';
+  }
 
-//   // CHECKING FOR PHONE NUMBER
-//   if (phoneNumberValue === "") {
-//     setErrorFor(phoneNumber, "Phone number can't be blank");
+  // CHECKING FOR PHONE NUMBER
+  if (phoneNumberValue === "") {
+    setErrorFor(phoneNumber, "Phone number can't be blank");
     
-//   }
+  }
 
-//   else if (!numberCheck(phoneNumberValue)) {
-//     setErrorFor(phoneNumber, "Enter a valid 10 digit Mobile Number");
+  else if (!numberCheck(phoneNumberValue)) {
+    setErrorFor(phoneNumber, "Enter a valid 10 digit Mobile Number");
     
-//   } 
+  } 
   
-//   else {
-//     howCorrect++;
-//     setSuccessFor(phoneNumber);
-//     subjectEl.style.borderColor = '#00B68C';
+  else {
+    howCorrect++;
+    setSuccessFor(phoneNumber);
+    subjectEl.style.borderColor = '#00B68C';
 
-//   }
+  }
 
 // // setSuccessFor(subjectEl);
   
 // // IF ERROR THAN RUN THIS
-// function setErrorFor(input, message) {
-//   let formControl = input.parentElement;
-//   formControl.className = "input error";
-//   let small = formControl.querySelector("small");
-//   small.innerText = message;
-// }
+function setErrorFor(input, message) {
+  let formControl = input.parentElement;
+  formControl.className = "input error";
+  let small = formControl.querySelector("small");
+  small.innerText = message;
+}
 
-// // IF NO ERROR THAN RUN THIS
-// function setSuccessFor(input) {
-//   let formControl = input.parentElement;
-//   formControl.className = "input success";
-// }
+// IF NO ERROR THAN RUN THIS
+function setSuccessFor(input) {
+  let formControl = input.parentElement;
+  formControl.className = "input success";
+}
 
-// isAllFormCorrect();
+isAllFormCorrect();
 
-// function isAllFormCorrect(){
+function isAllFormCorrect(){
 
-//   if(howCorrect >= 2){
-//     console.log('ALL CORRECT');
-//     formAnswer = true;
-//   }
+  if(howCorrect >= 2){
+    console.log('ALL CORRECT');
+    formAnswer = true;
+  }
 
-//   else {
-//     console.log('NO CORRECT');
-//     formAnswer = false;
-//   }
-// }
+  else {
+    console.log('NO CORRECT');
+    formAnswer = false;
+  }
+}
 
-// let formPromise = new Promise((resolve, reject) => {
-// if(formAnswer == true){
-//   resolve('success');
-// }
+let formPromise = new Promise((resolve, reject) => {
+if(formAnswer == true){
+  resolve('success');
+}
 
-// else {
-//   reject('failed');  
-// }}
-// )
+else {
+  reject('failed');  
+}}
+)
 
-// formPromise.then((message) => {
-//   console.log('FORM: '+ message);
-//   handleSubmit();
-//   async function handleSubmit() {
-//     var status = document.getElementById("my-form-status");
-//     var data = new FormData(x.target);
-//     fetch(x.target.action, {
-//       method: formEl.method,
-//       body: data,
-//       headers: {
-//           'Accept': 'application/json'
-//       }
-//     }).then(response => {
-//       console.log('FORM DONE')
-//       formStatus.style.display = "block";
-//       formEl.classList.add('formSubmitted');
-//       status.innerHTML = "Thanks for your submission!";
-//       form.reset()
-//     }).catch(error => {
-//       console.log('FORM!')
-//       // status.innerHTML = "Oops! There was a problem submitting your form"
-//     });
-//   }
-//   formEl.addEventListener("submit", handleSubmit);
+formPromise.then((message) => {
+  console.log('FORM: '+ message);
+  handleSubmit();
+  async function handleSubmit() {
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(x.target);
+    fetch(x.target.action, {
+      method: formEl.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      console.log('FORM DONE')
+      formStatus.style.display = "block";
+      formEl.classList.add('formSubmitted');
+      status.innerHTML = "Thanks for your submission!";
+      form.reset()
+    }).catch(error => {
+      console.log('FORM!')
+      // status.innerHTML = "Oops! There was a problem submitting your form"
+    });
+  }
+  formEl.addEventListener("submit", handleSubmit);
 
-// }).catch((message) => {
-//   console.log('FORM NOT SUCCED: ' + message)
-// })
-// });
+}).catch((message) => {
+  console.log('FORM NOT SUCCED: ' + message)
+})
+});
 
-// // IS NUMBER 10 DIGIT
-// function numberCheck(str) {
-//     var pattern = new RegExp(/^[0-9]{10}$/g);
-//     return pattern.test(str);
-//   }
+// IS NUMBER 10 DIGIT
+function numberCheck(str) {
+    var pattern = new RegExp(/^[0-9]{10}$/g);
+    return pattern.test(str);
+  }
 
 
 // // Animation 
