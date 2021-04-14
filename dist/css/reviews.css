@@ -14,9 +14,10 @@
 	display: none !important;
 }
 
-.header img{
-    margin-top: -5px !important;
+header img{
+	margin-top: 20px;
 }
+
 
 #what {
 	color : black !important;
