@@ -124,10 +124,10 @@ margin-top: 0px !important;
     box-shadow: rgb(27 39 12 / 10%) 0 1px 3px;
 }
 
-#mobile-header svg {
-width: 70px;
-height: 70px;
-margin-top: 5px !important;
+#mobile-header img {
+max-width: 200px;
+max-height: 60px;
+margin-top: 10px !important;
 }
 
 

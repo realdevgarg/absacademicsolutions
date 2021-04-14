@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap");
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -227,7 +226,7 @@ header #buy-stationery {
 }
 header a:hover {
   transition: all 200ms ease;
-  color: #333;
+  color: grey;
 }
 
 .formSubmitted input, .formSubmitted label, .formSubmitted h2, .formSubmitted select {
@@ -393,7 +392,7 @@ header a:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-left: 60px;
+  padding-left: 80px;
 }
 .hero .left .btn {
   margin-top: 60px;
@@ -985,8 +984,21 @@ header a:hover {
   margin-bottom: 40px;
   margin-top: 30px;
 }
-.contact-us .social-icons i:hover {
-  color: #F80057;
+.contact-us .fa-linkedin {
+  color: #0e76a8 !important;
+}
+.contact-us .fa-instagram {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.contact-us .fa-facebook {
+  color: #1773EA;
+}
+.contact-us .fa-twitter {
+  color: #1C9CEA;
 }
 .contact-us button {
   display: flex;

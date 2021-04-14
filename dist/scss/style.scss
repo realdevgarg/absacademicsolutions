@@ -281,7 +281,7 @@ header {
 
         a:hover {
             transition: all 200ms ease;
-            color : $link-color-1;
+            color :grey;
         }
 }
 
@@ -490,7 +490,7 @@ justify-content: center;
         display: flex;
         justify-content: center;
         flex-direction : column;
-        padding-left: 60px;
+        padding-left: 80px;
         
 
     .btn {
@@ -1139,6 +1139,7 @@ margin-top: -20px;
 
 // Contact us 
 .contact-us {
+
     .contact-us-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1155,6 +1156,7 @@ margin-top: -20px;
     transform-origin: bottom;
     transform-box: fill-box;
     }
+
 
     @keyframes treeMoving {
         from {
@@ -1255,10 +1257,28 @@ margin-top: -20px;
         margin-top: 30px;
     }
 
-    .social-icons i:hover {
-        color : $secondary-color;
-    }
+    
+    .fa-linkedin {
+        color : #0e76a8 !important;
+        }
 
+        .fa-instagram {
+            color: transparent;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+
+        .fa-facebook {
+            color : #1773EA;
+        }
+
+        .fa-twitter {
+            color : #1C9CEA;
+        }
+        
+        
     
     button {
      display: flex;
