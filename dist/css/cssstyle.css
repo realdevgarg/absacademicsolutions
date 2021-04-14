@@ -1162,6 +1162,14 @@ header a:hover {
   background-color: #920033;
 }
 
+footer i {
+  color: white !important;
+}
+
+footer .fa-linkedin {
+  color: white !important;
+}
+
 #dextop-footer {
   background-color: black;
   color: white;
