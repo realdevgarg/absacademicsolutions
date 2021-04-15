@@ -57,7 +57,7 @@ a {
 }
 
 #svg-logo .cls-1 {
-  fill: #1877F2 !important;
+  fill: #1876f2 !important;
 }
 
 /* width */
@@ -85,7 +85,7 @@ a {
   min-width: 170px;
   text-align: center;
   outline: none;
-  background-color: #1877F2;
+  background-color: #1876f2;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -99,7 +99,7 @@ button a {
 }
 
 #viewAllBtn:hover, .hero .btn:hover, header #buy-stationery:hover {
-  background-color: #09499b;
+  background-color: #09489a;
   cursor: pointer;
   transition: all 200ms ease;
   transform: scale(0.99);
@@ -222,7 +222,7 @@ header li {
 header #buy-stationery {
   padding: 10px 40px;
   font-weight: normal;
-  background-color: #1877F2;
+  background-color: #1876f2;
 }
 header a:hover {
   transition: all 200ms ease;
@@ -524,7 +524,7 @@ header a:hover {
   color: #171A22 !important;
 }
 .courses-subjects h2 {
-  color: #1877F2;
+  color: #1876f2;
   font-weight: bold;
   font-size: 26px;
 }
@@ -553,7 +553,7 @@ header a:hover {
 }
 
 .announcements .left img {
-  fill: #1877F2 !important;
+  fill: #1876f2 !important;
   width: 50px !important;
   height: 50px !important;
 }
@@ -576,7 +576,7 @@ header a:hover {
   transform: scale(1.004);
 }
 .announcements .left svg {
-  fill: #1877F2 !important;
+  fill: #1876f2 !important;
 }
 .announcements .left .content {
   margin-right: 10px;
@@ -584,7 +584,7 @@ header a:hover {
 .announcements .left #new {
   margin-left: 123px;
   color: white;
-  background-color: #1877F2;
+  background-color: #1876f2;
 }
 .announcements .left #new h2 {
   margin-bottom: 5px !important;
@@ -651,7 +651,7 @@ header a:hover {
   color: #171A22 !important;
 }
 .why-choose-us .why-card svg {
-  fill: #1877F2 !important;
+  fill: #1876f2 !important;
 }
 .why-choose-us .why-card {
   padding: 15px;
@@ -792,7 +792,7 @@ header a:hover {
 
 .testimonials-avatar h3 {
   font-weight: 600;
-  color: #1877F2;
+  color: #1876f2;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -1004,7 +1004,7 @@ header a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1877F2;
+  background-color: #1876f2;
   transition: all 200ms ease;
 }
 .contact-us button i {

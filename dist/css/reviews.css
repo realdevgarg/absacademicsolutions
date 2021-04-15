@@ -3,6 +3,10 @@
 @import url("media.css");
 
 
+.testimonials-avatar h4 {
+	font-weight: bold !important;
+}
+
 /* Global */
 :root {
     --primary-color: #6558DA;
@@ -18,10 +22,14 @@ header img{
 	margin-top: 20px;
 }
 
+.college-name {
+	color : #F80057;
+}
 
 #what {
 	color : black !important;
 }
+
 
 .section-heading h1 {
 	padding: 30px 0px;
