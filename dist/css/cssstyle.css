@@ -81,7 +81,7 @@ a {
   background: #555;
 }
 
-.contact-us button, #viewAllBtn, .hero .left .btn, #book-class-form #book-btn, header #buy-stationery {
+.study-button, .contact-us button, #viewAllBtn, .hero .left .btn, #book-class-form #book-btn, header #buy-stationery {
   min-width: 170px;
   text-align: center;
   outline: none;
@@ -98,7 +98,7 @@ button a {
   margin: auto;
 }
 
-#viewAllBtn:hover, .hero .btn:hover, header #buy-stationery:hover {
+.study-button:hover, #viewAllBtn:hover, .hero .btn:hover, header #buy-stationery:hover {
   background-color: #09489a;
   cursor: pointer;
   transition: all 200ms ease;
@@ -1068,6 +1068,12 @@ header a:hover {
   height: 1px;
   background-color: gainsboro;
   margin: 0px auto;
+}
+
+.study-btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px !important;
 }
 
 #slider,

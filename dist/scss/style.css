@@ -58,7 +58,7 @@ a {
 }
 
 #svg-logo .cls-1 {
-  fill: #FF1213 !important;
+  fill: #1876f2 !important;
 }
 
 /* width */
@@ -82,11 +82,11 @@ a {
   background: #555;
 }
 
-.contact-us button, #viewAllBtn, .hero #book-class-form .btn, header #buy-stationery {
+.study-button, .contact-us button, #viewAllBtn, .hero .left .btn, #book-class-form #book-btn, header #buy-stationery {
   min-width: 170px;
   text-align: center;
   outline: none;
-  background-color: #FF1213;
+  background-color: #1876f2;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -99,8 +99,8 @@ button a {
   margin: auto;
 }
 
-#viewAllBtn:hover, .hero #book-class-form .btn:hover, header #buy-stationery:hover {
-  background-color: #ab0001;
+.study-button:hover, #viewAllBtn:hover, .hero .btn:hover, header #buy-stationery:hover {
+  background-color: #09489a;
   cursor: pointer;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
@@ -109,7 +109,7 @@ button a {
 }
 
 .different {
-  color: orange !important;
+  color: #F80057 !important;
 }
 .different .unicode {
   font-size: 1px !important;
@@ -121,7 +121,7 @@ button a {
 }
 
 #different {
-  color: orange !important;
+  color: #F80057 !important;
 }
 
 .body-top {
@@ -148,7 +148,7 @@ button a {
 }
 
 .cta-btn {
-  background-color: orange;
+  background-color: #F80057;
   border: none;
   outline: none;
   color: white;
@@ -158,12 +158,13 @@ button a {
   border-radius: 50%;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
+  border: 1px solid white;
 }
 
 .cta-btn:hover {
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
-  background-color: #996300;
+  background-color: #920033;
 }
 
 .active {
@@ -176,7 +177,7 @@ button a {
   width: 100%;
   margin-top: -15px;
 }
-.active svg {
+.active img {
   padding: 10px 0px;
   height: 72px !important;
   margin-top: 13px;
@@ -186,11 +187,22 @@ button a {
   top: -80px;
 }
 
+.top-announcement {
+  background-color: #F80057;
+  padding: 5px 20px;
+  color: white;
+  font-size: 14px;
+}
+.top-announcement span {
+  text-align: right;
+  float: right;
+}
+
 header {
   background-color: transparent !important;
   padding: 0px 40px;
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 20% 80%;
   height: 85px;
   z-index: 1000;
   -webkit-transition: all ease-out 0.5s;
@@ -202,26 +214,28 @@ header .navigation {
   -ms-flex-item-align: center;
       align-self: center;
 }
-header svg {
+header img {
   max-width: 140px;
   max-height: 100px;
   cursor: pointer;
+  margin-top: 15px;
 }
 header li {
   list-style-type: none;
   float: left;
-  padding: 0px 30px;
+  padding: 0px 25px;
   font-weight: bold;
   margin-top: 5px;
 }
 header #buy-stationery {
   padding: 10px 40px;
   font-weight: normal;
+  background-color: #1876f2;
 }
 header a:hover {
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
-  color: orange;
+  color: grey;
 }
 
 .formSubmitted input, .formSubmitted label, .formSubmitted h2, .formSubmitted select {
@@ -244,8 +258,8 @@ header a:hover {
 }
 .formSubmitted #checked {
   display: block !important;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   margin: 60px auto;
 }
 .formSubmitted #get {
@@ -260,11 +274,185 @@ header a:hover {
   padding-bottom: 20px;
 }
 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.modal button {
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #F80057;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 25%;
+  margin-left: 80px;
+}
+.modal button:hover {
+  background-color: #c50045;
+}
+
+.modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+#overlay {
+  position: fixed !important;
+  opacity: 0;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#book-class-form {
+  margin-left: 122px;
+  margin-top: 5px;
+  background-color: white;
+  width: 445px;
+  height: 475px;
+  border: 2px solid #d3d3d3;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#book-class-form #checked {
+  display: none;
+  -webkit-animation: checkAnimation 2s ease infinite alternate;
+          animation: checkAnimation 2s ease infinite alternate;
+}
+@-webkit-keyframes checkAnimation {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+@keyframes checkAnimation {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+#book-class-form #my-form-status {
+  text-align: center;
+  color: #F80057;
+  margin-top: -20px;
+}
+#book-class-form input, #book-class-form select {
+  padding: 10px;
+  width: 330px;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+  background-color: white;
+}
+#book-class-form h2 {
+  font-family: "Poppins";
+  padding: 20px 0 30px 0;
+  text-align: center;
+}
+#book-class-form .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#book-class-form label {
+  margin-left: 57px;
+}
+#book-class-form .input.error small {
+  visibility: visible;
+}
+#book-class-form .input.error input {
+  border-color: #e75c3c;
+}
+#book-class-form .input.success select {
+  border-color: #F80057;
+  background-color: white;
+}
+#book-class-form .input.success input {
+  border-color: #F80057;
+  background-color: white;
+}
+#book-class-form small {
+  color: #e75c3c;
+  visibility: hidden;
+  margin-top: -25px;
+  margin-left: 57px;
+  margin-bottom: 20px;
+}
+
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 40px;
   margin-top: 28px;
+}
+.hero .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 80px;
+}
+.hero .left .btn {
+  margin-top: 60px;
+  width: 225px !important;
 }
 .hero svg {
   margin-top: -30px;
@@ -273,6 +461,13 @@ header a:hover {
 .hero h1 {
   font-size: 30px;
   font-family: "Poppins";
+  font-size: 38px;
+}
+.hero h2 {
+  color: #27282d;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 30px;
 }
 .hero #white-circle {
   -webkit-animation: rotate-circle 1.5s infinite linear;
@@ -438,105 +633,6 @@ header a:hover {
             transform: rotateZ(-5deg);
   }
 }
-.hero #book-class-form {
-  margin-left: 122px;
-  margin-top: 5px;
-  background-color: white;
-  width: 445px;
-  height: 475px;
-  border: 2px solid #d3d3d3;
-  border-radius: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.hero #book-class-form #checked {
-  display: none;
-  -webkit-animation: checkAnimation 2s ease infinite alternate;
-          animation: checkAnimation 2s ease infinite alternate;
-}
-@-webkit-keyframes checkAnimation {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-}
-@keyframes checkAnimation {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-}
-.hero #book-class-form #my-form-status {
-  text-align: center;
-  color: orange;
-  margin-top: -20px;
-}
-.hero #book-class-form input, .hero #book-class-form select {
-  padding: 10px;
-  width: 330px;
-  outline: none;
-  border: none;
-  margin: 0 auto;
-  margin-top: 5px;
-  margin-bottom: 30px;
-  border-radius: 5px;
-  border: 1px solid #d3d3d3;
-  background-color: white;
-}
-.hero #book-class-form h2 {
-  font-family: "Poppins";
-  padding: 20px 0 30px 0;
-  text-align: center;
-}
-.hero #book-class-form .input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.hero #book-class-form label {
-  margin-left: 57px;
-}
-.hero #book-class-form .input.error small {
-  visibility: visible;
-}
-.hero #book-class-form .input.error input {
-  border-color: #e75c3c;
-}
-.hero #book-class-form .input.success select {
-  border-color: orange;
-  background-color: white;
-}
-.hero #book-class-form .input.success input {
-  border-color: orange;
-  background-color: white;
-}
-.hero #book-class-form small {
-  color: #e75c3c;
-  visibility: hidden;
-  margin-top: -25px;
-  margin-left: 57px;
-  margin-bottom: 20px;
-}
 
 .why-choose-us .why-cards, .courses-subjects .subjects {
   display: grid;
@@ -568,11 +664,16 @@ header a:hover {
 .courses-subjects {
   background-color: #c9edff;
 }
+.courses-subjects #also {
+  text-align: center;
+  color: black;
+  padding-top: 40px;
+}
 .courses-subjects h1 {
   color: #171A22 !important;
 }
 .courses-subjects h2 {
-  color: #FF1213;
+  color: #1876f2;
   font-weight: bold;
   font-size: 26px;
 }
@@ -585,7 +686,7 @@ header a:hover {
   color: grey;
 }
 .courses-subjects a:hover {
-  color: orange;
+  color: #F80057;
 }
 .courses-subjects #btech {
   grid-column: 1/2 !important;
@@ -601,7 +702,7 @@ header a:hover {
 }
 
 .announcements .left img {
-  fill: #FF1213 !important;
+  fill: #1876f2 !important;
   width: 50px !important;
   height: 50px !important;
 }
@@ -630,7 +731,7 @@ header a:hover {
           transform: scale(1.004);
 }
 .announcements .left svg {
-  fill: #FF1213 !important;
+  fill: #1876f2 !important;
 }
 .announcements .left .content {
   margin-right: 10px;
@@ -638,7 +739,7 @@ header a:hover {
 .announcements .left #new {
   margin-left: 123px;
   color: white;
-  background-color: #FF1213;
+  background-color: #1876f2;
 }
 .announcements .left #new h2 {
   margin-bottom: 5px !important;
@@ -752,7 +853,7 @@ header a:hover {
   color: #171A22 !important;
 }
 .why-choose-us .why-card svg {
-  fill: #FF1213 !important;
+  fill: #1876f2 !important;
 }
 .why-choose-us .why-card {
   padding: 15px;
@@ -820,7 +921,7 @@ header a:hover {
   transition: all 200ms ease;
 }
 .about-us .about-as i:hover {
-  color: orange;
+  color: #F80057;
 }
 .about-us .about-as .social-icons {
   margin-left: 15px;
@@ -829,10 +930,13 @@ header a:hover {
 
 .reviews-wrap {
   position: relative;
-  background: #c9edff;
+  background: #F80057;
   z-index: 1;
   width: 100%;
   text-align: center;
+}
+.reviews-wrap h1 {
+  color: white;
 }
 
 .fa-caret-left {
@@ -874,7 +978,7 @@ header a:hover {
 
 .testimonials-text-after {
   position: absolute;
-  color: orange;
+  color: #F80057;
   opacity: 0.3;
   font-size: 35px;
   -webkit-transition: all 400ms linear;
@@ -885,7 +989,7 @@ header a:hover {
 
 .testimonials-text-before {
   position: absolute;
-  color: orange;
+  color: #F80057;
   opacity: 0.3;
   font-size: 35px;
   -webkit-transition: all 400ms linear;
@@ -896,7 +1000,7 @@ header a:hover {
 
 .testimonials-avatar h3 {
   font-weight: 600;
-  color: #FF1213;
+  color: #1876f2;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -986,7 +1090,7 @@ header a:hover {
 
 .tc-pagination .swiper-pagination-bullet, .tc-pagination2.swiper-pagination-bullet {
   opacity: 1;
-  background: #FF1213;
+  background: white;
   margin: 0 2px;
   width: 10px;
   height: 10px;
@@ -1111,6 +1215,9 @@ header a:hover {
           flex-direction: column;
   font-family: "Montserrat", sans-serif;
 }
+.contact-us h5 {
+  font-size: 18px !important;
+}
 .contact-us .slim-card {
   display: grid;
   grid-template-columns: 10% 90%;
@@ -1128,7 +1235,7 @@ header a:hover {
   font-size: 30px;
 }
 .contact-us a h5:hover {
-  color: orange;
+  color: #F80057;
 }
 .contact-us .social-icons {
   display: -webkit-box;
@@ -1143,8 +1250,21 @@ header a:hover {
   margin-bottom: 40px;
   margin-top: 30px;
 }
-.contact-us .social-icons i:hover {
-  color: orange;
+.contact-us .fa-linkedin {
+  color: #0e76a8 !important;
+}
+.contact-us .fa-instagram {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.contact-us .fa-facebook {
+  color: #1773EA;
+}
+.contact-us .fa-twitter {
+  color: #1C9CEA;
 }
 .contact-us button {
   display: -webkit-box;
@@ -1156,7 +1276,7 @@ header a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: orange;
+  background-color: #1876f2;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
 }
@@ -1167,7 +1287,7 @@ header a:hover {
   margin-bottom: -5px;
 }
 .contact-us button:hover {
-  background-color: #996300;
+  background-color: #920033;
 }
 .contact-us .chat-btn {
   display: -webkit-box;
@@ -1185,6 +1305,14 @@ header a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.also-here .content img {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.also-here .content img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .also-here .content #ub-logo {
   width: 130px;
@@ -1221,6 +1349,16 @@ header a:hover {
   height: 1px;
   background-color: gainsboro;
   margin: 0px auto;
+}
+
+.study-btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px !important;
 }
 
 #slider,
@@ -1305,7 +1443,7 @@ header a:hover {
 }
 
 #btt {
-  background-color: orange;
+  background-color: #F80057;
   color: white;
   padding: 10px;
   width: 100%;
@@ -1317,7 +1455,15 @@ header a:hover {
 }
 
 #btt:hover {
-  background-color: #996300;
+  background-color: #920033;
+}
+
+footer i {
+  color: white !important;
+}
+
+footer .fa-linkedin {
+  color: white !important;
 }
 
 #dextop-footer {
@@ -1336,7 +1482,7 @@ header a:hover {
   line-height: 1.65;
 }
 #dextop-footer a:hover {
-  color: orange;
+  color: #F80057;
 }
 #dextop-footer .top {
   text-align: center;

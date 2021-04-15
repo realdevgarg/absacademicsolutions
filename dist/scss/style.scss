@@ -1373,6 +1373,20 @@ margin-top: -20px;
     margin: 0px auto;
 }
 
+.study-btn-wrap {
+    display: flex;
+    justify-content : center;
+    margin-top: 40px !important;
+}
+
+.study-button {
+@extend %btn-shared
+}
+
+.study-button:hover {
+@extend %btn-hover-primary;
+}
+
 
 // Gallery
 #slider,
