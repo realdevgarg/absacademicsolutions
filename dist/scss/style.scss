@@ -281,8 +281,8 @@ header {
 
     #checked {
         display: block !important;
-        width: 250px;
-        height : 250px;
+        width: 275px;
+        height : 275px;
         margin: 60px auto;
         }
 
@@ -491,6 +491,11 @@ justify-content: center;
     .btn {
         @extend %btn-shared;
         width: 225px !important;
+    }
+
+
+    .hero_btns {
+        margin-top: 60px;
     }
 
 }
@@ -1291,6 +1296,7 @@ margin-top: -20px;
 .chat-btn {
     display: flex;
     justify-content: center;
+    
 }
 }
 

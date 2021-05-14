@@ -156,6 +156,14 @@ margin-top: 13px !important;
  margin-top: 10px;
 }
 
+.hero_btns {
+    margin-top: 0px !important;
+}
+
+#chat {
+margin-top: 50px !important;
+}
+
 
 .hero .right {
     display: grid; 

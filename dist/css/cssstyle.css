@@ -230,8 +230,8 @@ header a:hover {
 }
 .formSubmitted #checked {
   display: block !important;
-  width: 250px;
-  height: 250px;
+  width: 275px;
+  height: 275px;
   margin: 60px auto;
 }
 .formSubmitted #get {
@@ -399,6 +399,9 @@ header a:hover {
 }
 .hero .left .btn {
   width: 225px !important;
+}
+.hero .left .hero_btns {
+  margin-top: 60px;
 }
 .hero svg {
   margin-top: -30px;
