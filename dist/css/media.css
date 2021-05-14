@@ -606,7 +606,9 @@ grid-column: 2/3  !important;
 
 .hero .left .btn #online-class{
     margin-top: 30px !important;
-
+    border: 1px solid #1876f2  !important;
+    background-color: white !important;
+    color: #1876f2 !important;
 }
 
 /* GALLERY */
