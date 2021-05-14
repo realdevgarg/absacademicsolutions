@@ -506,6 +506,21 @@ justify-self: center;
 margin-top: -5px !important;
 }
 
+#online-class {
+    margin-left: 0px !important;
+    margin-top : 20px !important;
+}
+
+.hero_btns {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+iframe {
+    height: 200px !important;
+}
 
 .contact-us .left svg  {
         width: 320px ;

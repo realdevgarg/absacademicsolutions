@@ -388,6 +388,12 @@ header a:hover {
   padding-bottom: 40px;
   margin-top: 28px;
 }
+.hero #online-class {
+  background-color: white !important;
+  color: #1876f2;
+  border: 1px solid #1876f2;
+  margin-left: 10px;
+}
 .hero .left {
   display: flex;
   justify-content: center;
@@ -1076,6 +1082,10 @@ header a:hover {
   margin-top: 40px !important;
 }
 
+.study-button {
+  margin-bottom: 40px;
+}
+
 #slider,
 .wrap,
 .slide-content {
@@ -1102,12 +1112,16 @@ header a:hover {
   background-image: url("https://i.ibb.co/88ffFG2/gallery6.jpg");
 }
 
-.slide3 {
-  background-image: url("https://i.ibb.co/r4MvPqf/gallery3.jpg");
-}
-
 .slide4 {
   background-image: url("https://i.ibb.co/bmYnyWf/gallery2.jpg");
+}
+
+.slide5 {
+  background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg");
+}
+
+.slide6 {
+  background-image: url("https://cdn.pixabay.com/photo/2015/04/23/21/59/tree-736875_960_720.jpg");
 }
 
 .slide-content span {

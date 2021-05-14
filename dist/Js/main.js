@@ -133,7 +133,7 @@ function numberCheck(str) {
 
 
 
-
+ 
 // REVIEWS SLIDESHOW 
 function initParadoxWay() {
  
