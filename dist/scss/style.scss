@@ -2,30 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap');
 
 // COLORS
-$primary-color : hsl(214, 89%, 52%);
+$primary-color : #1876f2;
 $secondary-color : #F80057 ; 
-// #45E0A8 ( Green ) #673DE6 ( blue ) ##3E0AC4 ( indigo ) ##00B68C #146eb4 #6558DA
 $light-back-color : rgba(246, 248, 255, 0.53);
 $link-color-1: #333; 
 $border-color : #d3d3d3;
 $light-back-color : #c9edff;
-$sec-heading-color : #171A22;
 $para-color : #26282d;
-$footer-color : #C0C0C0;
 $box-shadow-val : 0 30px 60px rgb(213 215 225 / 49%);
 
 // Font Family
-$main-heading-font : 'Poppins';
+$main-heading-font : 'Poppins', sans-serif;
 $sub-heading-font : 'Montserrat', sans-serif;;
 $para-font : 'Poppins', sans-serif;
+
 
 // Font Sizes
 $heading-font-size-1 : 30px;
 $heading-font-size-2 : 26px;
 $para-font-size : 16px;
 $general-line-height : 1.65;
-
-// FC5181
 
 * {
     box-sizing: border-box;
@@ -42,7 +38,6 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
 
 .mobile {
 display: none;
@@ -65,7 +60,7 @@ h2 , h3{
 
 .unicode {
     font-size: 14px;
-    margin-left: 3px;
+    margin-left: 2px;
    }
 
 a {
@@ -88,7 +83,6 @@ a {
 #svg-logo .cls-1 {
         fill : $primary-color !important;
     }
-
 
 // SCROLLBAR 
 /* width */
@@ -141,13 +135,7 @@ button a {
 
     .different {
     color: $secondary-color !important;
-    
-    .unicode {
-        font-size : 1px !important;
     }
-    }
-
-
 
     #dotted {
         font-size: 16px !important;
@@ -167,7 +155,7 @@ button a {
 #cta {
     position : fixed;
     right : 20px;
-    bottom: 55px;
+    bottom: 40px;
     z-index : 2;
 }
 
@@ -175,13 +163,6 @@ button a {
     font-size : 30px;
 }
 
-#call {
-    display : none;
-}
-
-#chat {
-    display: block;
-}
 
 .cta-btn {
     background-color: $secondary-color;
@@ -194,7 +175,6 @@ button a {
     border-radius: 50%;
     transition : all 200ms ease;
     border : 1px solid white;
-
   }
   
 .cta-btn:hover {
@@ -236,7 +216,6 @@ span {
 }
 }
 
-
 header { 
         background-color: transparent !important;
         padding: 0px 40px;
@@ -252,18 +231,17 @@ header {
         align-self: center;
         }
 
-
         img {
-            max-width: 140px;
+            max-width: 175px;
             max-height: 100px;
             cursor: pointer;
-            margin-top: 15px;
+            margin-top: 12px;
         }
      
         li {
             list-style-type: none;
             float: left;
-            padding: 0px  25px;
+            padding: 0px 25px;
             font-weight: bold;
             margin-top: 5px;
         }
@@ -272,8 +250,7 @@ header {
             @extend %btn-shared;
             padding: 10px 40px;
             font-weight: normal;
-            background-color: $primary-color;
-        }
+            }
 
         #buy-stationery:hover {
             @extend %btn-hover-primary;
@@ -685,9 +662,6 @@ background-color:$light-back-color;
  @extend %card-share;
 }
 
-h1 {
-color : $sec-heading-color!important;    
-}
 
 h2 {
     color : $primary-color;
@@ -861,9 +835,6 @@ margin-top: -20px;
 .why-choose-us {
    background-color: $light-back-color;
 
-   h1 {
-    color : $sec-heading-color !important;    
-    }
     
   .why-cards {
     @extend %card-wrap-share;
@@ -1600,3 +1571,32 @@ h4 {
 }
 }
 
+.social-icons i {
+    font-size: 35px !important;
+    margin: 0px 7px;
+
+}
+
+.fa-linkedin {
+    color: #0e76a8 !important;
+}
+
+.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.fa-facebook {
+    color: #1773EA;
+}
+
+.fa-twitter {
+    color: #1C9CEA;
+}
+
+h4>span {
+    font-family: bold !important;
+}
