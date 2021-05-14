@@ -319,6 +319,9 @@ header a:hover {
   flex-direction: column;
   justify-content: center;
 }
+#book-class-form #book-btn {
+  margin-top: 60px;
+}
 #book-class-form #checked {
   display: none;
   animation: checkAnimation 2s ease infinite alternate;
@@ -407,7 +410,6 @@ header a:hover {
   padding-left: 80px;
 }
 .hero .left .btn {
-  margin-top: 60px;
   width: 225px !important;
 }
 .hero svg {

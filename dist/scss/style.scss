@@ -397,6 +397,7 @@ justify-content: center;
     justify-content: center;
 
     #book-btn {
+     margin-top: 60px;
     @extend %btn-shared;
     }
 
@@ -512,7 +513,6 @@ justify-content: center;
 
     .btn {
         @extend %btn-shared;
-        margin-top: 60px;
         width: 225px !important;
     }
 

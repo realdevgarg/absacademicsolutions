@@ -604,6 +604,14 @@ grid-column: 2/3  !important;
 }
 
 
+#online-class {
+    background-color: white !important;
+    color: #1876f2 !important;
+    border : 1px solid #1876f2 !important;
+    margin-left: 0px !important;
+}
+
+
 .hero .left .btn #online-class{
     margin-top: 30px !important;
     border: 1px solid #1876f2  !important;
