@@ -396,8 +396,8 @@ header a:hover {
 }
 .hero #online-class {
   background-color: white !important;
-  color: #1876f2;
-  border: 1px solid #1876f2;
+  color: #1876f2 !important;
+  border: 1px solid #1876f2 !important;
   margin-left: 10px;
 }
 .hero .left {

@@ -512,10 +512,10 @@ margin-top: -5px !important;
 }
 
 .hero_btns {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr;
-    justify-content: center;
+    display: grid !important;
+    grid-template-columns: auto !important;
+    grid-template-rows: 1fr 1fr !important;
+    justify-content: center !important;
 }
 
 iframe {
