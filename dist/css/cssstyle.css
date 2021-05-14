@@ -382,6 +382,12 @@ header a:hover {
   margin-bottom: 20px;
 }
 
+#highlight {
+  color: red !important;
+  font-size: 12px;
+  margin-left: -1px;
+}
+
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
