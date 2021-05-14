@@ -518,6 +518,7 @@ margin-top: -5px !important;
     justify-content: center !important;
 }
 
+
 iframe {
     height: 200px !important;
 }
@@ -602,6 +603,11 @@ grid-column: 2/3  !important;
     margin: 15px auto !important;
 }
 
+
+.hero .left .btn #online-class{
+    margin-top: 30px !important;
+
+}
 
 /* GALLERY */
 #full-hero-slider .paragraph.big.white {
