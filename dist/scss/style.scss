@@ -1296,10 +1296,13 @@ margin-top: -20px;
 .chat-btn {
     display: flex;
     justify-content: center;
-    
-}
 }
 
+#chat:hover {
+    background-color: darken($color: $primary-color, $amount: 20);
+  }
+  
+}
 
 // ALSO HERE 
 .also-here {
