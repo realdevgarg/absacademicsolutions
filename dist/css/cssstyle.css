@@ -106,7 +106,7 @@ button a {
 }
 
 .different {
-  color: #F80057 !important;
+  color: #1AD03F !important;
 }
 
 #dotted {
@@ -115,7 +115,7 @@ button a {
 }
 
 #different {
-  color: #F80057 !important;
+  color: #1AD03F !important;
 }
 
 .body-top {
@@ -134,7 +134,7 @@ button a {
 }
 
 .cta-btn {
-  background-color: #F80057;
+  background-color: #1AD03F;
   border: none;
   outline: none;
   color: white;
@@ -148,7 +148,7 @@ button a {
 
 .cta-btn:hover {
   transition: all 200ms ease;
-  background-color: #920033;
+  background-color: #0f7524;
 }
 
 .active {
@@ -171,7 +171,7 @@ button a {
 }
 
 .top-announcement {
-  background-color: #F80057;
+  background-color: #1AD03F;
   padding: 5px 20px;
   color: white;
   font-size: 14px;
@@ -185,7 +185,7 @@ header {
   background-color: transparent !important;
   padding: 0px 40px;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 15% 85%;
   height: 85px;
   z-index: 1000;
   transition: all ease-out 0.5s;
@@ -204,7 +204,7 @@ header img {
 header li {
   list-style-type: none;
   float: left;
-  padding: 0px 25px;
+  padding: 0px 20px;
   font-weight: bold;
   margin-top: 5px;
 }
@@ -259,14 +259,14 @@ header a:hover {
   outline: none;
   border: none;
   color: white;
-  background-color: #F80057;
+  background-color: #1AD03F;
   padding: 10px;
   cursor: pointer;
   border-radius: 25%;
   margin-left: 80px;
 }
 .modal button:hover {
-  background-color: #c50045;
+  background-color: #14a331;
 }
 
 .modal-body {
@@ -328,7 +328,7 @@ header a:hover {
 }
 #book-class-form #my-form-status {
   text-align: center;
-  color: #F80057;
+  color: #1AD03F;
   margin-top: -20px;
 }
 #book-class-form input, #book-class-form select {
@@ -362,11 +362,11 @@ header a:hover {
   border-color: #e75c3c;
 }
 #book-class-form .input.success select {
-  border-color: #F80057;
+  border-color: #1AD03F;
   background-color: white;
 }
 #book-class-form .input.success input {
-  border-color: #F80057;
+  border-color: #1AD03F;
   background-color: white;
 }
 #book-class-form small {
@@ -540,7 +540,7 @@ header a:hover {
   color: grey;
 }
 .courses-subjects a:hover {
-  color: #F80057;
+  color: #1AD03F;
 }
 .courses-subjects #btech {
   grid-column: 1/2 !important;
@@ -718,7 +718,7 @@ header a:hover {
   transition: all 200ms ease;
 }
 .about-us .about-as i:hover {
-  color: #F80057;
+  color: #1AD03F;
 }
 .about-us .about-as .social-icons {
   margin-left: 15px;
@@ -727,7 +727,7 @@ header a:hover {
 
 .reviews-wrap {
   position: relative;
-  background: #F80057;
+  background: #1AD03F;
   z-index: 1;
   width: 100%;
   text-align: center;
@@ -772,7 +772,7 @@ header a:hover {
 
 .testimonials-text-after {
   position: absolute;
-  color: #F80057;
+  color: #1AD03F;
   opacity: 0.3;
   font-size: 35px;
   transition: all 400ms linear;
@@ -782,7 +782,7 @@ header a:hover {
 
 .testimonials-text-before {
   position: absolute;
-  color: #F80057;
+  color: #1AD03F;
   opacity: 0.3;
   font-size: 35px;
   transition: all 400ms linear;
@@ -970,12 +970,13 @@ header a:hover {
 .contact-us .slim-card i {
   font-size: 26px;
   margin-top: -5px;
+  color: #1876f2 !important;
 }
 .contact-us .social-icons i {
   font-size: 30px;
 }
 .contact-us a h5:hover {
-  color: #F80057;
+  color: #1AD03F;
 }
 .contact-us .social-icons {
   display: flex;
@@ -1014,7 +1015,7 @@ header a:hover {
   margin-bottom: -5px;
 }
 .contact-us button:hover {
-  background-color: #920033;
+  background-color: #0f7524;
 }
 .contact-us .chat-btn {
   display: flex;
@@ -1169,7 +1170,7 @@ header a:hover {
 }
 
 #btt {
-  background-color: #F80057;
+  background-color: #1AD03F;
   color: white;
   padding: 10px;
   width: 100%;
@@ -1180,7 +1181,7 @@ header a:hover {
 }
 
 #btt:hover {
-  background-color: #920033;
+  background-color: #0f7524;
 }
 
 footer i {
@@ -1227,7 +1228,7 @@ footer .fa-linkedin {
   line-height: 1.65;
 }
 #dextop-footer a:hover {
-  color: #F80057;
+  color: #1AD03F;
 }
 #dextop-footer .top {
   text-align: center;
