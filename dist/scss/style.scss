@@ -359,6 +359,11 @@ justify-content: center;
   }
 
   
+
+  .hero_btns {
+    margin-top: 60px !important;
+}
+  
 //   FORM
 
 #book-class-form {
@@ -491,11 +496,6 @@ justify-content: center;
     .btn {
         @extend %btn-shared;
         width: 225px !important;
-    }
-
-
-    .hero_btns {
-        margin-top: 60px;
     }
 
 }
