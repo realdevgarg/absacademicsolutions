@@ -1217,7 +1217,7 @@ margin-top: -20px;
     h5 {
         font-size : 18px !important;
     }
-    
+
     .slim-card {
         display: grid;
         grid-template-columns: 10% 90%;
@@ -1272,6 +1272,7 @@ margin-top: -20px;
             color : #1C9CEA;
         }
         
+
         
     
     button {
@@ -1408,24 +1409,32 @@ margin-bottom: 40px;
 .slide1 {
   background-image: url("https://i.ibb.co/kgtwNTs/gallery1.jpg");
 }
+
 .slide2 {
-  background-image: url("https://i.ibb.co/88ffFG2/gallery6.jpg");
+  background-image: url("https://i.ibb.co/88ffFG2/gallery2.jpg");
 }
 
 .slide3 {
+background-image: url('/dist/img/gallery/gallery3.jpg');
 }
 
 .slide4 {
-    background-image: url("https://i.ibb.co/bmYnyWf/gallery2.jpg");
+    background-image: url("https://i.ibb.co/bmYnyWf/gallery4.jpg");
   }
   
-.slide5 {
-    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg");
+// .slide5 {
+//     background-image: url("/dist/img/gallery/gallery5.jpg");
+//   }
+
+.slide6 {
+    background-image: url("/dist/img/gallery/gallery6.jpg");
   }
-  .slide6 {
-    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/21/59/tree-736875_960_720.jpg");
-  }
-  
+
+.slide7 {
+    background-image: url('/dist/img/gallery/gallery8.jpg');
+}
+
+
 .slide-content span {
   font-size: 4rem;
   color: #fff;
@@ -1492,6 +1501,26 @@ footer i{
 color : white !important;
 }
 
+footer .fa-linkedin:hover{
+color : #0e76a8 !important;
+}
+
+footer .fa-facebook:hover{
+    color: #1773EA !important;
+    }
+
+    footer .fa-instagram:hover{
+        color: transparent !important;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background-clip: text;
+        -webkit-background-clip: text;    
+        }
+
+        footer .fa-twitter:hover{
+            color: #1C9CEA !important;
+        }
+            
 footer .fa-linkedin {
     color : white !important;
 }

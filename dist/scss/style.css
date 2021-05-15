@@ -246,8 +246,8 @@ header a:hover {
 }
 .formSubmitted #checked {
   display: block !important;
-  width: 250px;
-  height: 250px;
+  width: 275px;
+  height: 275px;
   margin: 60px auto;
 }
 .formSubmitted #get {
@@ -317,6 +317,10 @@ header a:hover {
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+
+.hero_btns {
+  margin-top: 60px !important;
 }
 
 #book-class-form {
@@ -1293,6 +1297,9 @@ header a:hover {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.contact-us #chat:hover {
+  background-color: #09489b !important;
+}
 
 .also-here .content {
   display: grid;
@@ -1384,19 +1391,23 @@ header a:hover {
 }
 
 .slide2 {
-  background-image: url("https://i.ibb.co/88ffFG2/gallery6.jpg");
+  background-image: url("https://i.ibb.co/88ffFG2/gallery2.jpg");
+}
+
+.slide3 {
+  background-image: url("/dist/img/gallery/gallery3.jpg");
 }
 
 .slide4 {
-  background-image: url("https://i.ibb.co/bmYnyWf/gallery2.jpg");
-}
-
-.slide5 {
-  background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg");
+  background-image: url("https://i.ibb.co/bmYnyWf/gallery4.jpg");
 }
 
 .slide6 {
-  background-image: url("https://cdn.pixabay.com/photo/2015/04/23/21/59/tree-736875_960_720.jpg");
+  background-image: url("/dist/img/gallery/gallery6.jpg");
+}
+
+.slide7 {
+  background-image: url("/dist/img/gallery/gallery8.jpg");
 }
 
 .slide-content span {
@@ -1464,6 +1475,26 @@ header a:hover {
 
 footer i {
   color: white !important;
+}
+
+footer .fa-linkedin:hover {
+  color: #0e76a8 !important;
+}
+
+footer .fa-facebook:hover {
+  color: #1773EA !important;
+}
+
+footer .fa-instagram:hover {
+  color: transparent !important;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+footer .fa-twitter:hover {
+  color: #1C9CEA !important;
 }
 
 footer .fa-linkedin {

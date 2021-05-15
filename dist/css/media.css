@@ -302,7 +302,8 @@ grid-template-columns: 1fr !important;
 
 
 p {
-    font-size : 14px !important;
+    font-size : 10px !important;
+    margin-left: 9px;
 }
 
 .left .content {
@@ -537,6 +538,7 @@ margin-top: -10px;
     
     .chat-btn {
     margin-top: 30px !important;
+    margin-bottom: 10px !important;
     }
     
     #chat {
