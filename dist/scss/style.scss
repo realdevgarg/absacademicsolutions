@@ -3,7 +3,7 @@
 
 // COLORS
 $primary-color : #1876f2;
-$secondary-color : #1AD03F ; 
+$secondary-color : #1AD03F; 
 $light-back-color : rgba(246, 248, 255, 0.53);
 $link-color-1: #333; 
 $border-color : #d3d3d3;
@@ -119,6 +119,12 @@ a {
     padding: 15px 40px;
 }
 
+%white_btn {
+    background-color: white !important;
+    color: $primary-color !important;
+    border : 1px solid $primary-color !important;
+    margin-left: 10px;
+}
 
 button a {
     color : white !important;
@@ -206,9 +212,9 @@ background-color: darken($color: $secondary-color, $amount: 20);
 // TOP Announcement
 .top-announcement {
 background-color: $secondary-color;
-padding: 5px 20px;
+padding: 2px 20px;
 color : white;
-font-size : 14px;
+font-size : 16px;
 
 span {
     text-align: right;
@@ -216,6 +222,49 @@ span {
 }
 }
 
+.example1 {
+    height: 30px;	
+    overflow: hidden;
+    position: relative;
+   }
+   
+   .example1 p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: example1 15s linear infinite;
+    -webkit-animation: example1 15s linear infinite;
+    animation: example1 15s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes example1 {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes example1 {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes example1 {
+    0%   { 
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%); 
+    }
+   }
+   
 header { 
         background-color: transparent !important;
         padding: 0px 40px;
@@ -478,10 +527,7 @@ justify-content: center;
 
     
   #online-class {
-    background-color: white !important;
-    color: $primary-color !important;
-    border : 1px solid $primary-color !important;
-    margin-left: 10px;
+      @extend %white_btn;
 }
 
 
@@ -960,6 +1006,16 @@ margin-top: -20px;
 	z-index: 1;
 	width: 100%;
     text-align: center;
+
+    .college-name {
+        font-weight : bolder;
+    }
+
+    .writeAreview {
+        @extend %white_btn;
+    }
+
+
 
     h1 {
         color : white

@@ -94,6 +94,13 @@ a {
   padding: 15px 40px;
 }
 
+.reviews-wrap .writeAreview, .hero #online-class {
+  background-color: white !important;
+  color: #1876f2 !important;
+  border: 1px solid #1876f2 !important;
+  margin-left: 10px;
+}
+
 button a {
   color: white !important;
   margin: auto;
@@ -109,7 +116,7 @@ button a {
 }
 
 .different {
-  color: #F80057 !important;
+  color: #1AD03F !important;
 }
 
 #dotted {
@@ -118,7 +125,7 @@ button a {
 }
 
 #different {
-  color: #F80057 !important;
+  color: #1AD03F !important;
 }
 
 .body-top {
@@ -137,7 +144,7 @@ button a {
 }
 
 .cta-btn {
-  background-color: #F80057;
+  background-color: #1AD03F;
   border: none;
   outline: none;
   color: white;
@@ -153,7 +160,7 @@ button a {
 .cta-btn:hover {
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
-  background-color: #920033;
+  background-color: #0f7524;
 }
 
 .active {
@@ -177,21 +184,64 @@ button a {
 }
 
 .top-announcement {
-  background-color: #F80057;
-  padding: 5px 20px;
+  background-color: #1AD03F;
+  padding: 2px 20px;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
 }
 .top-announcement span {
   text-align: right;
   float: right;
 }
 
+.example1 {
+  height: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.example1 p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  /* Starting position */
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  -webkit-animation: example1 15s linear infinite;
+  animation: example1 15s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-webkit-keyframes example1 {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@keyframes example1 {
+  0% {
+    /* Firefox bug fix */
+    -webkit-transform: translateX(100%);
+    /* Firefox bug fix */
+    transform: translateX(100%);
+  }
+  100% {
+    /* Firefox bug fix */
+    -webkit-transform: translateX(-100%);
+    /* Firefox bug fix */
+    transform: translateX(-100%);
+  }
+}
 header {
   background-color: transparent !important;
   padding: 0px 40px;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 15% 85%;
   height: 85px;
   z-index: 1000;
   -webkit-transition: all ease-out 0.5s;
@@ -212,7 +262,7 @@ header img {
 header li {
   list-style-type: none;
   float: left;
-  padding: 0px 25px;
+  padding: 0px 20px;
   font-weight: bold;
   margin-top: 5px;
 }
@@ -277,14 +327,14 @@ header a:hover {
   outline: none;
   border: none;
   color: white;
-  background-color: #F80057;
+  background-color: #1AD03F;
   padding: 10px;
   cursor: pointer;
   border-radius: 25%;
   margin-left: 80px;
 }
 .modal button:hover {
-  background-color: #c50045;
+  background-color: #14a331;
 }
 
 .modal-body {
@@ -372,7 +422,7 @@ header a:hover {
 }
 #book-class-form #my-form-status {
   text-align: center;
-  color: #F80057;
+  color: #1AD03F;
   margin-top: -20px;
 }
 #book-class-form input, #book-class-form select {
@@ -411,11 +461,11 @@ header a:hover {
   border-color: #e75c3c;
 }
 #book-class-form .input.success select {
-  border-color: #F80057;
+  border-color: #1AD03F;
   background-color: white;
 }
 #book-class-form .input.success input {
-  border-color: #F80057;
+  border-color: #1AD03F;
   background-color: white;
 }
 #book-class-form small {
@@ -437,12 +487,6 @@ header a:hover {
   grid-template-columns: 1fr 1fr;
   padding-bottom: 40px;
   margin-top: 28px;
-}
-.hero #online-class {
-  background-color: white !important;
-  color: #1876f2 !important;
-  border: 1px solid #1876f2 !important;
-  margin-left: 10px;
 }
 .hero .left {
   display: -webkit-box;
@@ -689,7 +733,7 @@ header a:hover {
   color: grey;
 }
 .courses-subjects a:hover {
-  color: #F80057;
+  color: #1AD03F;
 }
 .courses-subjects #btech {
   grid-column: 1/2 !important;
@@ -921,7 +965,7 @@ header a:hover {
   transition: all 200ms ease;
 }
 .about-us .about-as i:hover {
-  color: #F80057;
+  color: #1AD03F;
 }
 .about-us .about-as .social-icons {
   margin-left: 15px;
@@ -930,10 +974,13 @@ header a:hover {
 
 .reviews-wrap {
   position: relative;
-  background: #F80057;
+  background: #1AD03F;
   z-index: 1;
   width: 100%;
   text-align: center;
+}
+.reviews-wrap .college-name {
+  font-weight: bolder;
 }
 .reviews-wrap h1 {
   color: white;
@@ -978,7 +1025,7 @@ header a:hover {
 
 .testimonials-text-after {
   position: absolute;
-  color: #F80057;
+  color: #1AD03F;
   opacity: 0.3;
   font-size: 35px;
   -webkit-transition: all 400ms linear;
@@ -989,7 +1036,7 @@ header a:hover {
 
 .testimonials-text-before {
   position: absolute;
-  color: #F80057;
+  color: #1AD03F;
   opacity: 0.3;
   font-size: 35px;
   -webkit-transition: all 400ms linear;
@@ -1230,12 +1277,13 @@ header a:hover {
 .contact-us .slim-card i {
   font-size: 26px;
   margin-top: -5px;
+  color: #1876f2 !important;
 }
 .contact-us .social-icons i {
   font-size: 30px;
 }
 .contact-us a h5:hover {
-  color: #F80057;
+  color: #1AD03F;
 }
 .contact-us .social-icons {
   display: -webkit-box;
@@ -1287,7 +1335,7 @@ header a:hover {
   margin-bottom: -5px;
 }
 .contact-us button:hover {
-  background-color: #920033;
+  background-color: #0f7524;
 }
 .contact-us .chat-btn {
   display: -webkit-box;
@@ -1458,7 +1506,7 @@ header a:hover {
 }
 
 #btt {
-  background-color: #F80057;
+  background-color: #1AD03F;
   color: white;
   padding: 10px;
   width: 100%;
@@ -1470,7 +1518,7 @@ header a:hover {
 }
 
 #btt:hover {
-  background-color: #920033;
+  background-color: #0f7524;
 }
 
 footer i {
@@ -1517,7 +1565,7 @@ footer .fa-linkedin {
   line-height: 1.65;
 }
 #dextop-footer a:hover {
-  color: #F80057;
+  color: #1AD03F;
 }
 #dextop-footer .top {
   text-align: center;
