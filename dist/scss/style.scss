@@ -1299,7 +1299,7 @@ margin-top: -20px;
 }
 
 #chat:hover {
-    background-color: darken($color: $primary-color, $amount: 20);
+    background-color: darken($color: $primary-color, $amount: 20) !important;
   }
   
 }

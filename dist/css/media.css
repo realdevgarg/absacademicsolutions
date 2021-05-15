@@ -160,10 +160,6 @@ margin-top: 13px !important;
     margin-top: 0px !important;
 }
 
-#chat {
-margin-top: 50px !important;
-}
-
 
 .hero .right {
     display: grid; 
@@ -472,6 +468,14 @@ margin-bottom: 20px !important;
     grid-template-columns: auto !important;
     grid-template-rows: auto auto;
 }
+
+.chat-btn {
+margin-top: 50px !important;
+}
+
+#chat {
+    margin-top: 50px !important;
+    }
 
 .contact-us h5 {
 font-size: 16px !important;

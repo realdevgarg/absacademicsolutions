@@ -1021,7 +1021,7 @@ header a:hover {
   justify-content: center;
 }
 .contact-us #chat:hover {
-  background-color: #09489b;
+  background-color: #09489b !important;
 }
 
 .also-here .content {
