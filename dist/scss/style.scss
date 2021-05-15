@@ -1407,11 +1407,13 @@ margin-bottom: 40px;
 }
 
 .slide1 {
-  background-image: url("https://i.ibb.co/kgtwNTs/gallery1.jpg");
+  background-image: url('/dist/img/gallery/gallery1.jpg');
+
 }
 
 .slide2 {
-  background-image: url("https://i.ibb.co/88ffFG2/gallery2.jpg");
+  background-image: url('/dist/img/gallery/gallery2.jpg');
+
 }
 
 .slide3 {
@@ -1419,7 +1421,8 @@ background-image: url('/dist/img/gallery/gallery3.jpg');
 }
 
 .slide4 {
-    background-image: url("https://i.ibb.co/bmYnyWf/gallery4.jpg");
+    background-image: url('/dist/img/gallery/gallery4.jpg');
+
   }
   
 // .slide5 {
